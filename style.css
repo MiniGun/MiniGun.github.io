@@ -20,6 +20,7 @@ html, body {
 }
 
 #paragraph {
+		text-indent: 40px;
 		color: #DB4105;
 		font-size: 25px;
 		font-family: "Chau Philomene One";
