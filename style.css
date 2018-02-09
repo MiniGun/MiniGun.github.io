@@ -21,3 +21,13 @@ p1    {
 	font-family: "Chau Philomene One";
 	padding: 40px;
 }
+
+footer {
+    background-color: #DB4105;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow:hidden;
+}
