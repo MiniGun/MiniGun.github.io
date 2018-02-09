@@ -4,6 +4,13 @@ html, body {
    	padding:0;
 	height:100%;
 }
+
+h1 {
+		color: #DB4105;
+		font-size: 80px;
+		font-family: Bungee Shade;
+	}
+
 #container {
    min-height:100%;
    position:relative;
@@ -12,12 +19,6 @@ html, body {
    padding:10px;
 }
 #body {
-	
-	h1 {
-		color: #DB4105;
-		font-size: 80px;
-		font-family: Bungee Shade;
-	}
 	
 	#paragraph {
 		color: #DB4105;
