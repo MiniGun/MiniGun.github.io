@@ -28,7 +28,8 @@ html, body {
 	}
 
 h1 {
-		top: -50px;
+		height: 1;
+		line-height: 1;
 		color: #DB4105;
 		font-size: 80px;
 		font-family: Bungee Shade;
