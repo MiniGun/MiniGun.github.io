@@ -22,11 +22,12 @@ p1    {
 	padding: 40px;
 }
 
-.footer{
-    position: absolute;
-    bottom: 0;
+.footer {
+    position: fixed;
     left: 0;
-    right: 0;
-    height: 100px;
-    background: #DB4105;
+    bottom: 0;
+    width: 100%;
+    background-color: #DB4105;
+    color: #161616;
+    text-align: center;
 }
