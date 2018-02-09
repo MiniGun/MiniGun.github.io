@@ -28,9 +28,8 @@ p1    {
     bottom: 0;
     width: 100%;
     background-color: #DB4105;
-    color: #DB4105;
-    	font-size: 25px;
-	font-family: "Chau Philomene One";
-	padding: 40px;
     text-align: center;
+    color: #161616;
+    font-size: 25px;
+    font-family: "Chau Philomene One";
 }
