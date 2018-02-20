@@ -1,4 +1,5 @@
 <div id="logo-container">
+	<?xml-stylesheet type="text/css" href="animations.css" ?>
 	<svg id="Logo" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<defs>
 			<g id="Logo-Text">
@@ -17,44 +18,6 @@
 				0.029,17.00588 -1.23401,26.11161 -5.89518,42.5 -13.39768,47.1054 -51.57131,85.79083 -99.10871,100.4375 -17.71996,5.45966 -39.58152,7.76906 -57.27663,6.05055 z"/> 
 			</g>
 		</defs>
-		<style>
-		#Logo {
-			width: 300PX;
-			height: 200px;
-			position: absolute;
-			margin: auto;
-			display:block; 
-			fill: #DB4105;
-			stroke: #DB4105;
-			stroke-miterlimit: 5;
-			}
-
-			.Animate-Draw {
-			fill-opacity: 0;
-			animation-timing-function: ease-in-out;
-			animation-fill-mode: forwards;
-			animation-iteration: 1;
-			animation-name: DrawLine, FillIn;
-			animation-duration: 4s, 1s;
-			animation-delay: 0s, 3.5s;
-			}
-
-			#Draw-Text { 
-			animation-delay: 0s, 2.1s; 
-			animation-duration: 3.5s, 1s; 
-			stroke-dashArray: 3000;
-			stroke-dashoffset: 3000;
-				
-
-			@keyframes DrawLine {
-			to { stroke-dashOffset: 0; }
-			}
-
-			@keyframes FillIn {
-			from { fill-opacity: 0; }
-			to { fill-opacity: 1; }
-			}
-	</style>
 	</svg>
 	<svg id="Logo" class="Animate-Path" width="100%" height="100%" viewBox="0 0 612 792" xml:space="preserve">
 		<use id="Draw-Text" class="Animate-Draw" xlink:href="#Logo-Text" />
