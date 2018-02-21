@@ -10,7 +10,8 @@ body {
   display:block; 
   fill: #DB4105;
   stroke: #DB4105;
-  stroke-miterlimit: 10;
+  stroke-miterlimit: 5;
+  stroke-linejoin: round;
 }
 
 .Animate-Draw {
