@@ -27,7 +27,7 @@ body {
 #Draw-Text { 
   animation-delay: 0s, 2s; 4s;
   animation-duration: 4s, .4s; .1s;
-  stroke-dashArray: 500;
+  stroke-dashArray: 3000;
   stroke-dashoffset: 3000;
 }
 
