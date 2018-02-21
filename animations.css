@@ -2,12 +2,12 @@
   width: 150PX;
   height: 150px;
   position: absolute;
-  text-align: center;
   margin: auto;
   display:block; 
   fill: #DB4105;
   stroke: #DB4105;
   stroke-miterlimit: 5;
+  text-shadow: 2px 2px 5px
 }
 
 .Animate-Draw {
