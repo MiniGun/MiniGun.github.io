@@ -20,14 +20,14 @@ body {
   
   animation-name: DrawLine, FillIn;
   animation-duration: 3.5s, .4s;
-  animation-delay: 0s, 2.5s;
+  animation-delay: 0s, 1.8s;
 }
 
 #Draw-Text { 
-  animation-delay: 0s, 2.5s; 
+  animation-delay: 0s, 1.8s; 
   animation-duration: 3.5s, .4s; 
-  stroke-dashArray: 4000;
-  stroke-dashoffset: 4500;
+  stroke-dashArray: 2500;
+  stroke-dashoffset: 2500;
 }
 
 @keyframes DrawLine {
