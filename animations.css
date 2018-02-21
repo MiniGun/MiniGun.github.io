@@ -23,8 +23,8 @@
 #Draw-Text { 
   animation-delay: 0s, 2s; 
   animation-duration: 3.5s, .4s; 
-  stroke-dashArray: 3000;
-  stroke-dashoffset: 3500;
+  stroke-dashArray: 3500;
+  stroke-dashoffset: 3000;
 }
 
 @keyframes DrawLine {
