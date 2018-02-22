@@ -5,8 +5,7 @@ body {
 #Logo {
   width: 150PX;
   height: 150px;
-  position: absolute;
-  margin: auto;
+  
   display:block; 
   fill: #DB4105;
   stroke: #DB4105;
