@@ -4,5 +4,6 @@ body {
 
 #logo {
 	position: relative;
-	left: -50px;	
+ 	left: -25px;
+ 	top: -160px;
 }
