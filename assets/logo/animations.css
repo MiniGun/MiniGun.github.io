@@ -1,0 +1,38 @@
+#Logo {
+  width: 150PX;
+  height: 150px;
+  display:block; 
+  fill: #DB4105;
+  stroke: #DB4105;
+  stroke-miterlimit: 5;
+}
+
+.Animate-Draw {
+  fill-opacity: 0;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration: 1;
+  
+  animation-name: DrawLine, FillIn, Stroke;
+}
+
+#Draw-Text { 
+  animation-delay: 0s, 1.8s; 0s;
+  animation-duration: 4s, .5s; 0s;
+  stroke-dashArray: 3000;
+  stroke-dashoffset: 3000;
+}
+
+@keyframes Stroke {
+  from { stroke-opacity: 2; }
+  to { stroke-opacity: 0; }
+}
+
+@keyframes DrawLine {
+  to { stroke-dashOffset: 1; }
+}
+
+@keyframes FillIn {
+  from { fill-opacity: 0; }
+  to { fill-opacity: 1; }
+}
