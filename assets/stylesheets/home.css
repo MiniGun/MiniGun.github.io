@@ -7,8 +7,6 @@ body {
 	height: 150px;
 	display: block;
 	position: relative;
- 	left: -25px;
-	top: -160px;
 	fill: #DB4105;
 	stroke: #DB4105;
 	stroke-miterlimit: 5;
