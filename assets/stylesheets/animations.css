@@ -8,8 +8,8 @@
 }
 
 #Draw-Text { 
-  animation-delay: 0s, 1.8s; 0s;
-  animation-duration: 4s, .5s; 0s;
+  animation-delay: 0s, 0s; 1.8s;
+  animation-duration: 0s, .4s; .5s;
   stroke-dashArray: 3000;
   stroke-dashoffset: 3000;
 }
