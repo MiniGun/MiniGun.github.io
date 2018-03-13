@@ -9,13 +9,13 @@
 
 #Draw-Text { 
   animation-delay: 0s, 0s; 1.8s;
-  animation-duration: 0s, .4s; .5s;
+  animation-duration: 0s, 4s; .5s;
   stroke-dashArray: 3000;
   stroke-dashoffset: 3000;
 }
 
 @keyframes Stroke {
-  from { stroke-opacity: 2; }
+  from { stroke-opacity: 1; }
   to { stroke-opacity: 0; }
 }
 
