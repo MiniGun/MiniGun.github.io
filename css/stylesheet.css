@@ -314,7 +314,7 @@ header {
         clip-path: polygon(0 0, 0 0, 0 0, 0 0);
     }
 }
-/* end background glitch */
+/* End Background Glitch */
 
 .nav a {
 	background-color: #ad7f29;
@@ -334,7 +334,7 @@ header {
 
 header h1 {
 	color: white;
-	padding-top: 50px;
+	padding-top: 512px;
 }
 
 .nav {
