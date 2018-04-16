@@ -17,6 +17,8 @@ p {
 
 h1 {
 	font-size: 1.8em;
+	width: 1000px;
+	top: 100px;
 }
 
 h2 {
