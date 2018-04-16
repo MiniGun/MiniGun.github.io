@@ -1,6 +1,8 @@
 MineThemes Creative **Standard** License 
-Author: Dylan.Systems
-Reosurce: MineOX
+Author: ByBilly
+Reosurce: Minecraft Server Overview
 Date of publish: 14/04/2018
 
 http://minethemes.net/
+
+
