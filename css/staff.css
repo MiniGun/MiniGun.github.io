@@ -77,15 +77,15 @@ h2 {
 
 .owner,
 .head-builder,
-.manager,
-.admin {
+.secretary,
+.builder {
 	padding: 12px;
 }
 
 .owner {background-color: rgba(212, 32, 40, .5);}
 .head-builder {background-color: rgba(57, 227, 206, .5);}
-.manager {background-color: rgba(66, 134, 244, .5);}
-.admin {background-color: rgba(59, 211, 42, .5);}
+.secretary {background-color: rgba(66, 134, 244, .5);}
+.builder {background-color: rgba(59, 211, 42, .5);}
 
 /* Footer */
 footer {
