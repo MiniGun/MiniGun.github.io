@@ -291,8 +291,7 @@ p {
 }
 
 h1 {
-	font-size: 1.8em; 
-	width: 1000px;
+	font-size: 1.8em;
 	position: relative;
 	opacity: 0;
 	top: 100;
