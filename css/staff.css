@@ -47,6 +47,10 @@ h2 {
 	width: 95%;
 }
 
+.main-content {
+	text-align: center;
+}
+
 .staff {
 	background: linear-gradient(#4286f4, #70d8ff) fixed;
 	padding: 40px 0;
