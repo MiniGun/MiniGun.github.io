@@ -47,10 +47,6 @@ h2 {
 	width: 95%;
 }
 
-.fade {
-	text-align: center;
-}
-
 .staff {
 	background: linear-gradient(#4286f4, #70d8ff) fixed;
 	padding: 40px 0;
@@ -80,16 +76,14 @@ h2 {
 .mc {width: 98%; background: #4286f4;}
 
 .owner,
-.head-builder,
-.secretary,
-.builder {
+.manager,
+.admin {
 	padding: 12px;
 }
 
-.owner {background-color: rgba(212, 32, 40, .5);}
-.head-builder {background-color: rgba(57, 227, 206, .5);}
-.secretary {background-color: rgba(255, 0, 176, .5);}
-.builder {background-color: rgba(59, 211, 42, .5);}
+.owner {background-color: rgba(244, 65, 65, .5);}
+.manager {background-color: rgba(66, 134, 244, .5);}
+.admin {background-color: rgba(59, 211, 42, .5);}
 
 /* Footer */
 footer {
