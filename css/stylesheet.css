@@ -299,7 +299,8 @@ h1 {
 
 .playercount {
 	position: relative;
-	top: 150px;
+	opacity: 0;
+	top: 100px;
 }
 
 h2 {
