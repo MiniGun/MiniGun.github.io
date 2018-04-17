@@ -3,6 +3,10 @@ h2 {
 	margin-bottom: 0;
 }
 
+.fade {
+	color: black;
+}
+
 .about-staff {
 	display: flex;
 	justify-content: space-between;
