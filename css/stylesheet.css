@@ -310,7 +310,6 @@ a {
 /* Header */
 
 header {
-	background: linear-gradient(rgba(66,134,244,0.75), rgba(112,216,255,0.75)) fixed;;
 	width: 100%;
 	text-align: center;
 	border-bottom: 2px solid #4286f4;
