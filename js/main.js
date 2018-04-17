@@ -1,2 +1,2 @@
-$(".animate").hide().animate({top: '150px', opacity: '1'});
+$(".animate").hide().animate({opacity: '1', top: '150px'});
 $(".fade").hide().fadeIn(800,"swing");

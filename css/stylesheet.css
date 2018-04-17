@@ -292,11 +292,8 @@ p {
 
 h1 {
 	font-size: 1.8em; 
-	display: block; 
-	width: 1000px; 
-	opacity: 0;
+	width: 1000px;
 	position: relative;
-	top: 100px;
 }
 
 .playercount {
