@@ -3,8 +3,17 @@ h2 {
 	margin-bottom: 0;
 }
 
-.fade {
-	color: black;
+.main-content {
+	position: absolute;
+	text-align: center;
+}
+
+.abt-epr h1 {
+	text-align: center;
+}
+
+.abt-epr p1 {
+	text-align: center;
 }
 
 .about-staff {
@@ -54,6 +63,7 @@ h2 {
 .staff {
 	background: linear-gradient(#4286f4, #70d8ff) fixed;
 	padding: 40px 0;
+	top: 
 }
 
 .staff h2 {
