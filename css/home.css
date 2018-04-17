@@ -78,7 +78,6 @@ header {
 .split,
 .vote {
 	position: relative;
-	text-align: center;
 	padding: 5px;
 	margin: 10px;
 }
@@ -88,7 +87,7 @@ header {
 }
 
 .vote {
-	flex-basis: 210px;
+	flex-basis: auto;
 }
 
 /* Media Queries */
