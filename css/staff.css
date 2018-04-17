@@ -76,16 +76,13 @@ h2 {
 .mc {width: 98%; background: #4286f4;}
 
 .owner,
-.manager,
-.admin {
+.head-builder,
+.secretary,
+.builder {
 	padding: 12px;
 }
 
-.owner {background-color: rgba(244, 65, 65, .5);}
-.manager {background-color: rgba(66, 134, 244, .5);}
-.admin {background-color: rgba(59, 211, 42, .5);}
-
-/* Footer */
-footer {
-	margin-top: 0;
-}
+.owner {background-color: rgba(212, 32, 40, .5);}
+.head-builder {background-color: rgba(57, 227, 206, .5);}
+.secretary {background-color: rgba(255, 0, 176, .5);}
+.builder {background-color: rgba(59, 211, 42, .5);}
