@@ -3,23 +3,9 @@ h2 {
 	margin-bottom: 0;
 }
 
-.main-content {
-	position: absolute;
-	text-align: center;
-}
-
-.abt-epr h1 {
-	text-align: center;
-}
-
-.abt-epr p1 {
-	text-align: center;
-}
-
 .about-staff {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	display: block;
+	text-align: center;
 }
 
 .prev-epr {
