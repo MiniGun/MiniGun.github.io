@@ -6,17 +6,12 @@ h2 {
 .about-staff {
 	display: block;
 	text-align: center;
+	padding-bottom: 25px;
 }
 
-.prev-epr {
-	margin: 30px auto 0 auto;
-	margin-bottom: 30px;
-	border-top: 1px solid black;
-}
-
-.about-epr,
-.prev-epr {
-	flex: 1 0 100%;
+.abt-epr h1 {
+	text-align: center;
+	padding-bottom: 25px;
 }
 
 /* Meter */
