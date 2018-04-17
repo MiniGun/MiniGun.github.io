@@ -1,2 +1,2 @@
-$(".animate").hide().show(800,"swing");
+$(".animate").hide().toggle(300);
 $(".fade").hide().fadeIn(800,"swing");
