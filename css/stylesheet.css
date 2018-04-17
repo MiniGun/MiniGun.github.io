@@ -291,9 +291,8 @@ p {
 }
 
 h1 {
-	font-size: 1.8em;
-	display: block; 
-	position: relative; 
+	font-size: 1.8em; 
+	position: relative;
 	top: 100px;
 }
 
