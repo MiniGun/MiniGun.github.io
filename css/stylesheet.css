@@ -370,6 +370,7 @@ header h1 {
 	width: 200px;
 	margin-left: 30px;
 	margin-top: 10px;
+	object-fit: scale-down;
 }
 
 .logo:hover {
