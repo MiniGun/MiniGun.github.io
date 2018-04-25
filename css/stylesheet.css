@@ -326,15 +326,6 @@ header {
 	box-sizing: border-box;
 }
 
-
-.nav a {
-	background-color: rgba(255, 255, 255, .8);
-	color: rgba(0, 0, 0, .8);
-	text-decoration: none;
-	padding: 4px;
-	border-radius: 7%;
-}
-
 .header {
 	display: flex;
 	justify-content: center;
@@ -346,20 +337,6 @@ header {
 header h1 {
 	color: white;
 	padding-top: 50px;
-}
-
-.nav {
-	list-style: none;
-	display: flex;
-}
-
-.nav:not(:first-child) li {
-	margin-left: 20px;
-}
-
-.nav li {
-	text-transform: uppercase;
-	font-weight: 600;
 }
 
 .logo {
@@ -375,10 +352,6 @@ header h1 {
 
 .logo:hover {
 	transform: scale(1.05);
-}
-
-.nav {
-	padding: 18px 0 20px 0;
 }
 
 /* Footer */
@@ -407,8 +380,5 @@ footer p {
 	}
 	.picture-container {
 		padding: 0 10px 0 0;
-	}
-	.nav a {
-		padding: 8px;
 	}
 }
