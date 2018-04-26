@@ -69,8 +69,8 @@ header {
 }
 
 .split {
-	flex-basis: 100px;
-	position: absolute;
+	flex-basis: 250px;
+	position: relative;
 	text-align: center;
 	padding: 5px;
 	margin: 10px;
