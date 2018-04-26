@@ -45,7 +45,7 @@ header {
 	transform: scale(1.05);
 }
 
-.logo {
+#logo {
 	width: 1000px;
 }
 
@@ -88,7 +88,7 @@ header {
 }
 
 .vote {
-	flex-basis: 150px;
+	flex-basis: 250px;
 	position: relative;
 	text-align: center;
 	padding: 5px;
@@ -98,7 +98,7 @@ header {
 /* Media Queries */
 
 @media only screen and (max-width: 600px) {
-	.logo {
+	#logo {
 		width: 600px;
 	}
 }
