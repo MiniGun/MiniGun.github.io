@@ -12,18 +12,9 @@ header {
   padding: 10px;
 }
 
-.grid-container>div,
-h1 {
-  text-align: center;
+.grid-container>div {
+  item-align: center;
   padding:20px 0;
-}
-
-h1 {
-  grid-area: 1 / 1 / span 2 / span 5;
-}
-
-playercount {
-  grid-area: 3 / 1 / span 2 / span 5;
 }
 
 .playercount {
@@ -54,7 +45,6 @@ playercount {
 	padding-bottom: 15px;
 }
 
-.split,
 .vote {
 	flex: 1 0 auto;
 }
@@ -87,14 +77,6 @@ playercount {
 	text-align: center;
 	max-width: 900px;
 	margin: 0 auto;
-}
-
-.split {
-	flex-basis: 200px;
-	position: relative;
-	text-align: center;
-	padding: 5px;
-	margin: 10px;
 }
 
 .vote {
