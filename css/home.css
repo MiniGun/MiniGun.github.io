@@ -5,6 +5,27 @@ header {
 	background-size: cover;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container>div,
+h1 {
+  text-align: center;
+  padding:20px 0;
+}
+
+h1 {
+  grid-area: 1 / 1 / span 2 / span 5;
+}
+
+playercount {
+  grid-area: 3 / 1 / span 2 / span 5;
+}
+
 .playercount {
 	display: inline-block;
 	background: rgba(0,0,0,0.4);
