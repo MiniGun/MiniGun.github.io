@@ -45,7 +45,7 @@ header {
 	transform: scale(1.05);
 }
 
-#animate {
+.logo {
 	width: 1000px;
 }
 
@@ -98,7 +98,7 @@ header {
 /* Media Queries */
 
 @media only screen and (max-width: 600px) {
-	#animate {
+	.logo {
 		width: 600px;
 	}
 }
