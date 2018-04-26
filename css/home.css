@@ -17,6 +17,10 @@ header {
   padding:20px 0;
 }
 
+.forums {
+	grid-column-start: 2;
+}
+
 .playercount {
 	display: inline-block;
 	background: rgba(0,0,0,0.4);
