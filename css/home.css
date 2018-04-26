@@ -68,20 +68,20 @@ header {
 	margin: 0 auto;
 }
 
-.split,
-.vote {
-	position: relative;
+.split {
+	flex-basis: 100px;
+	position: absolute;
 	text-align: center;
 	padding: 5px;
 	margin: 10px;
 }
 
-.split {
-	flex-basis: 100px;
-}
-
 .vote {
 	flex-basis: 250px;
+	position: relative;
+	text-align: center;
+	padding: 5px;
+	margin: 10px;
 }
 
 /* Media Queries */
