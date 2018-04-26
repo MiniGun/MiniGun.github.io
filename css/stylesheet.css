@@ -349,7 +349,7 @@ footer p {
 /* Media Queries */
 @media(min-width: 700px) {
 	h1 {
-		font-size: 3.5em;
+		width: 50%;
 	}
 	.picture-container {
 		padding: 0 10px 0 0;
