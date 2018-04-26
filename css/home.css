@@ -45,6 +45,10 @@ header {
 	transform: scale(1.05);
 }
 
+.logo {
+	width: 1000px;
+}
+
 .about-text {
 	padding-bottom: 15px;
 }
@@ -93,25 +97,8 @@ header {
 
 /* Media Queries */
 
-@media(min-width: 1000px) {
-	.item:not(:first-child) {
-		margin-left: 90px;
-	}
-}
-
-@media(min-width: 700px) {
-	.main-content {
-		width: 40%;
-		text-align: center;
-		margin: 0 auto;
-	}
-	.playercount {
-		font-size: 1.2em;
-	}
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-	.vote {
-		min-width: 50%;
+@media only screen and (max-width: 600px) {
+	.logo {
+		width: 600px;
 	}
 }

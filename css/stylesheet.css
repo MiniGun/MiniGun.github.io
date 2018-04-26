@@ -347,9 +347,9 @@ footer p {
 }
 
 /* Media Queries */
-@media(min-width: 700px) {
+@media(max-width: 600px) {
 	h1 {
-		width: 50%;
+		font-size: 3.5em;
 	}
 	.picture-container {
 		padding: 0 10px 0 0;
