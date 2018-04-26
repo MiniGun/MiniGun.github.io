@@ -10,7 +10,7 @@ header {
   grid-template-columns: auto auto auto auto;
   grid-gap: 10px;
   padding: 10px;
-  top: 100px;
+  padding-top: 50px;
 }
 
 .grid-container>div {
@@ -100,9 +100,9 @@ header {
 
 @media only screen and (max-width: 700px) {
 	.logo {
-		width: 50%;
+		width: 80%;
 	}
 	.img {
-		width: 50%;
+		width: 80%;
 	}
 }
