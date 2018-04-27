@@ -106,4 +106,7 @@ header {
 	.img {
 		width: 80%;
 	}
+	.playercount {
+		font-size: 0.7em;
+	}
 }
