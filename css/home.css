@@ -20,7 +20,7 @@ header {
 }
 
 .forums {
-	grid-column-start: 2;
+	grid-column-start: 1;
 }
 
 .playercount {
