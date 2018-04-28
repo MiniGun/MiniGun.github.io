@@ -27,7 +27,7 @@
     background: url(/img/minecraft.jpg) no-repeat 50% 0;
     background-color: transparent;
     background-size: cover;
-	filter:blur(1px);
+	filter:blur(3px);
     transform: translate3d(0, 0, 0);
     background-blend-mode: none
 }

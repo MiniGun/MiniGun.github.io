@@ -9,7 +9,7 @@ header {
 .grid-container {
   display: grid;
   justify-content: center;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
   grid-gap: 50px;
   padding: 10px;
   padding-top: 200px;
@@ -18,10 +18,6 @@ header {
 .grid-container>div {
   item-align: center;
   padding:20px 0;
-}
-
-.forums {
-	grid-column-start: 1;
 }
 
 .playercount {
@@ -54,6 +50,14 @@ header {
 
 .about-text {
 	padding-bottom: 15px;
+}
+
+.vote {
+	flex-basis: 150px;
+	position: relative;
+	text-align: center;
+	padding: 5px;
+	margin: 10px;
 }
 
 .vote-btn {
