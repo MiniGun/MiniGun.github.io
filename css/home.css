@@ -36,12 +36,16 @@ header {
 
 /* Main Content */
 
-.img {
+.img-discord,
+.img-store,
+.img-staff {
 	transition: all 0.4s ease;
 	padding-bottom: 10px;
 }
 
-.img:hover {
+.img-discord:hover,
+.img-store:hover,
+.img-staff:hover {
 	transform: scale(1.05);
 }
 
