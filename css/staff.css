@@ -44,7 +44,7 @@ h2 {
 }
 
 .staff {
-	background: linear-gradient(#4286f4, #70d8ff) fixed;
+	background: linear-gradient( rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.75)) fixed;
 	padding: 40px 0;
 	top: 100
 }
