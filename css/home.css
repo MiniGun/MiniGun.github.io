@@ -119,18 +119,21 @@ header {
 
 @media only screen and (max-width: 500px) {
 	.logo {
-		width: 70%;
+		width: 90%;
 	}
 
-	.img-discord {
-		width: 100%;
-	}
-
-	.img-store {
-		width: 100%;
-	}
-
+	.img-discord,
+	.img-store,
 	.img-staff {
 		width: 100%;
+	}
+
+	.grid-container {
+		  grid-column-gap: 60px;
+	}
+
+	.playercount {
+		width: 80%;
+		font-size: 12px;
 	}
 }
