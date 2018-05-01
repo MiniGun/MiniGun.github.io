@@ -117,6 +117,20 @@ header {
 
 /* Media Queries */
 
-@media only screen and (max-width: 700px) {
-	
+@media only screen and (max-width: 500px) {
+	.logo {
+		width: 70%;
+	}
+
+	.img-discord {
+		width: 100%;
+	}
+
+	.img-store {
+		width: 100%;
+	}
+
+	.img-staff {
+		width: 100%;
+	}
 }
