@@ -346,13 +346,3 @@ footer {
 footer p {
 	padding: 0 0 0 30px;
 }
-
-/* Media Queries */
-@media(max-width: 600px) {
-	h1 {
-		font-size: 3.5em;
-	}
-	.picture-container {
-		padding: 0 10px 0 0;
-	}
-}
