@@ -3,50 +3,41 @@ h1 {
 	opacity: 1;
 }
 
-h2 {
-	margin-bottom: 0;
-}
-
 .about-staff {
 	display: block;
 	text-align: center;
 	padding-bottom: 25px;
 }
 
-/* Meter */
-.meter-container {
-	text-align: left;
-}
-
-.meter {
-	width: 100%;
-	background: #595a5b;
-}
-
-.skills {
-	text-align: right;
-	padding-right: 20px;
-	line-height: 40px;
-	color: white;
-}
-
 .logo {
 	width: 50%;
 }
 
+.logo-div {
+	text-align: left;
+	margin-top: 20px;
+}
+
+.nav {
+	text-align: right;
+}
+
 .nav-btn {
-	background-color: rgb(255,255,255);
-	border: 2px solid #595a5b;
-	padding: 20px 40px;
+	background-color: rgba(255, 255, 255, 0);
+	border: 2px solid #ffffff;
+	color: #ffffff;
+	padding: 1% 2%;
 	outline: none;
 	cursor: pointer;
 	transition-duration: 0.4s;
 	text-transform: uppercase;
+	font-size: 12px;
+	margin: 10px;
 }
 
-.vote-btn:hover {
-	background-color: #595a5b;
-	color: white;
+.nav-btn:hover {
+	background-color: #ffffff;
+	color: #595a5b;
 }
 
 /* Staff */
@@ -83,10 +74,6 @@ h2 {
 	margin-top: 20px;
 }
 
-.ma {width: 78%; background: #f44141;}
-.mb {width: 96%; background: #33af33;}
-.mc {width: 98%; background: #4286f4;}
-
 .owner,
 .secretary,
 .head-builder,
@@ -99,5 +86,5 @@ h2 {
 .owner {background-color: rgba(255, 85, 85);}
 .secretary {background-color: rgb(170, 0, 170);}
 .head-builder {background-color: rgba(0, 170, 170);}
-.admin {background-color: rgba(85, 255, 85);}
+.admin {background-color: rgb(74, 216, 74);}
 .helper {background-color: rgba(85, 85, 255);}
