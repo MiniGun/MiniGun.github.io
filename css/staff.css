@@ -34,6 +34,16 @@ h2 {
 	width: 50%;
 }
 
+.nav-btn {
+	background-color: rgb(255,255,255);
+	border: 2px solid #595a5b;
+	padding: 20px 40px;
+	outline: none;
+	cursor: pointer;
+	transition-duration: 0.4s;
+	text-transform: uppercase;
+}
+
 /* Staff */
 .staff-team {
 	display: flex;
