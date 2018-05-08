@@ -1,41 +1,37 @@
-/* About */
-h1 {
-	opacity: 1;
-}
+/* Nav */
 
-.about-staff {
-	display: block;
+.header {
+	width: 100%;
 	text-align: center;
-	padding-bottom: 25px;
-}
-
-
-.logo {
-	width: 50%;
-	align-self: left;
-}
-
-.logo-div {
-	text-align: left;
-	margin-top: 20px;
+	border-bottom: 2px solid #ffffff;
+	box-sizing: border-box;
 }
 
 .nav {
 	display: flex;
-	align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.logo {
+	transition-duration: 0.4s;
+	padding: 20px;
+	width: 30%;
+	float: left;
 }
 
 .nav-btn {
-	right: 0px;
+	float: right;
 	background-color: rgba(255, 255, 255, 0);
 	border: 2px solid #ffffff;
 	color: #ffffff;
-	padding: 10px 20px;
-	outline: none;
+	padding: 1vh 2vw;
 	cursor: pointer;
 	transition-duration: 0.4s;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-family: 'Source Code Pro', monospace;
+	font-size: .8vw;
 	margin: 10px;
 }
 
@@ -62,11 +58,32 @@ h1 {
 	color: white;
 	text-align: center;
 	margin-top: 0;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 2.5vw;
+}
+
+.staff h3 {
+	color: white;
+	text-align: center;
+	margin-top: 0;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 1vw;
+}
+
+.staff h4 {
+	color: white;
+	text-align: center;
+	margin-top: 0;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 1.3vw;
 }
 
 .staff-team > div {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 1.2vw;
+	font-weight: ;
 	padding: 15px;
-	margin: 5px;
+	margin-top: 2.2%;
 	background-color: rgba(0,0,0,0.4);
 	color: white;
 	text-align: center;
@@ -94,3 +111,4 @@ h1 {
 .head-builder {background-color: rgba(0, 170, 170);}
 .admin {background-color: rgb(74, 216, 74);}
 .helper {background-color: rgba(85, 85, 255);}
+
