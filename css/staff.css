@@ -76,12 +76,10 @@
 	margin-top: 0;
 	font-family: 'Work Sans', sans-serif;
 	font-size: 1.3vw;
+	font-weight: 200;
 }
 
 .staff-team > div {
-	font-family: 'Work Sans', sans-serif;
-	font-size: .8vw;
-	font-weight: 300;
 	padding: 15px;
 	margin-top: 2.2%;
 	background-color: rgba(0,0,0,0.4);
@@ -101,6 +99,9 @@
 .head-builder,
 .admin,
 .helper {
+	font-family: 'Work Sans', sans-serif;
+	font-size: .8vw;
+	font-weight: 200;
 	padding: 1vw;
 }
 
