@@ -46,7 +46,7 @@
 	justify-content: space-around;
 	flex-wrap: wrap;
 	margin: 20px auto 10px auto;
-	width: 95%;
+	width: 85vw;
 }
 
 .staff {
@@ -80,8 +80,8 @@
 
 .staff-team > div {
 	font-family: 'Work Sans', sans-serif;
-	font-size: 1.2vw;
-	font-weight: ;
+	font-size: .8vw;
+	font-weight: 600;
 	padding: 15px;
 	margin-top: 2.2%;
 	background-color: rgba(0,0,0,0.4);
@@ -101,14 +101,12 @@
 .head-builder,
 .admin,
 .helper {
-	padding: 12px;
-	font-size: 90%;
+	padding: 1vw;
 }
 
-.advisor {background-color: 	#FFD700;}
 .owner {background-color: rgba(255, 85, 85);}
-.secretary {background-color: rgb(170, 0, 170);}
-.head-builder {background-color: rgba(0, 170, 170);}
-.admin {background-color: rgb(74, 216, 74);}
-.helper {background-color: rgba(85, 85, 255);}
-
+.secretary {background-color: #AA00AA;}
+.advisor {background-color: #555555;}
+.admin {background-color: #962222;}
+.head-builder {background-color: #00AAAA;}
+.helper {background-color: #5555FF;}
