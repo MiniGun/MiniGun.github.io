@@ -103,7 +103,7 @@
 	padding: 1vw;
 }
 
-.owner {background-color: rgba(255, 85, 85);}
+.owner {background-color: #FF5555;}
 .secretary {background-color: #AA00AA;}
 .advisor {background-color: #555555;}
 .admin {background-color: #962222;}
