@@ -2,6 +2,10 @@ body {
 	overflow: hidden;
 }
 
+.container {
+	overflow: hidden;
+}
+
 /* Nav */
 
 .header {
