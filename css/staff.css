@@ -161,6 +161,65 @@ body {
 	}
 }
 
+@media only screen and (max-width: 850px) {
+	.logo {
+		width: 60%;
+	}
+
+	.nav-btn {
+	text-transform: uppercase;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 1.3vw;
+}
+
+	.staff {
+	padding: 15px 0;
+	}
+
+	.staff-team {
+		margin: 0px auto 10px auto;
+		width: 95vw;
+	}
+
+	.staff h4 {
+		font-family: 'Work Sans', sans-serif;
+		font-size: 1.3vw;
+		font-weight: 200;
+	}
+	
+	.advisor,
+	.owner,
+	.secretary,
+	.head-builder,
+	.admin,
+	.helper {
+		font-family: 'Work Sans', sans-serif;
+		font-size: 1vw;
+		padding: 1vw;
+	}
+
+	.staff h2 {
+		font-family: 'Work Sans', sans-serif;
+		font-size: 3vw;
+	}
+
+	.staff h3 {
+		color: white;
+		text-align: center;
+		margin-top: 0;
+		font-family: 'Work Sans', sans-serif;
+		font-size: 1.5vw;
+	}
+	.staff-team > div {
+		padding: 15px;
+		margin-top: 2.2%;
+		background-color: rgba(0,0,0,0.4);
+		color: white;
+		text-align: center;
+		width: 15%;
+	}
+}
+
 @media only screen and (max-width: 500px) {
 	.logo {
 		width: 100%;
@@ -208,11 +267,11 @@ body {
 	}
 
 	.staff-team > div {
-	padding: 15px;
-	margin-top: 2.2%;
-	background-color: rgba(0,0,0,0.4);
-	color: white;
-	text-align: center;
-	width: 30%;
-}
+		padding: 15px;
+		margin-top: 2.2%;
+		background-color: rgba(0,0,0,0.4);
+		color: white;
+		text-align: center;
+		width: 30%;
+	}
 }
