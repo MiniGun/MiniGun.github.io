@@ -1,4 +1,8 @@
 /* Home */
+body {
+	font-family: 'Work Sans', sans-serif;
+}
+
 header {
 	min-height: 100vh;
 	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55) 70%);
