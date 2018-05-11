@@ -29,7 +29,7 @@
 h1 {
 	position: relative;
 	opacity: 0;
-	text-align: center;
+	align-items: center;
 	top: 150;
 }
 
@@ -75,7 +75,6 @@ header {
 
 .logo {
 	width: 70%;
-	top: 150px;
 }
 
 .img-discord {
