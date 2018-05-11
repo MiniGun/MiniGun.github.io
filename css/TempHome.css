@@ -5,13 +5,6 @@ p {
 	line-height: 1.5em;
 }
 
-h1 {
-	font-size: 1.8em;
-	position: relative;
-	opacity: 0;
-	top: 100;
-}
-
 .playercount {
 	position: relative;
 	opacity: 0;
@@ -39,11 +32,6 @@ header {
 	text-align: center;
 	border-bottom: 2px solid #4286f4;
 	box-sizing: border-box;
-}
-
-header h1 {
-	color: white;
-	padding-top: 50px;
 }
 
 /* Footer */
