@@ -1,28 +1,13 @@
 /* Nav */
 
-.header {
-	width: 100%;
-	text-align: center;
-	border-bottom: 2px solid #ffffff;
-	box-sizing: border-box;
-}
-
 .nav {
 	display: flex;
-    justify-content: center;
+    justify-content: left;
     width: 100%;
-    align-items: center;
-}
-
-.logo {
-	transition-duration: 0.4s;
-	padding: 20px;
-	width: 30%;
-	float: left;
+    align-items: left;
 }
 
 .nav-btn {
-	float: right;
 	background-color: rgba(255, 255, 255, 0);
 	border: 2px solid #ffffff;
 	color: #ffffff;
@@ -41,6 +26,13 @@
 }
 
 /* Home */
+h1 {
+	position: relative;
+	opacity: 0;
+	text-align: center;
+	top: 150;
+}
+
 body {
 	font-family: 'Work Sans', sans-serif;
 }
