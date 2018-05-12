@@ -1,5 +1,4 @@
 /* Nav */
-
 .header {
 	width: 100%;
 	text-align: center;
@@ -21,6 +20,11 @@
 	float: left;
 }
 
+a {
+	cursor: default;
+	pointer-events: none;
+}
+
 .nav-btn {
 	float: right;
 	background-color: rgba(255, 255, 255, 0);
@@ -33,6 +37,7 @@
 	font-family: 'Source Code Pro', monospace;
 	font-size: .8vw;
 	margin: 10px;
+	pointer-events: all;
 }
 
 .nav-btn:hover {
