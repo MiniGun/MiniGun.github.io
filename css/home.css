@@ -40,24 +40,12 @@
 	color: #595a5b;
 }
 
-body {
-	font-family: 'Work Sans', sans-serif;
-}
-
 .playercount {
-	display: inline-block;
 	position: relative;
-	background: rgba(0,0,0,0.4);
-	padding: 3px;
-	font-size: 1em;
-	width: 100%;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 1vw;
 	color: white;
-	text-align: center;
-	animation-delay: 1.2s;
-}
-
-.playercount span {
-	color: cyan;
+	text-align: left;
 }
 
 header {
