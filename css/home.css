@@ -2,9 +2,8 @@
 
 .nav {
 	display: flex;
-    justify-content: left;
     width: 100%;
-    align-items: left;
+    justify-content: flex-start;
 }
 
 .nav-btn {
@@ -15,7 +14,7 @@
 	cursor: pointer;
 	transition-duration: 0.4s;
 	text-transform: uppercase;
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'Work Sans', sans-serif;
 	font-size: .8vw;
 	margin: 10px;
 }
@@ -25,37 +24,45 @@
 	color: #595a5b;
 }
 
-/* Home */
-h1 {
+/* Logo & Playercount */
+logo {
+	display: block;
 	position: relative;
+	padding: 10px;
 	opacity: 0;
-	align-items: center;
-	top: 150;
+	left: 250px;
+	animation-delay: 1s;
+}
+
+.logo-img {
+	width: 70%;
 }
 
 body {
 	font-family: 'Work Sans', sans-serif;
 }
 
-header {
-	min-height: 100vh;
-	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55) 70%);
-	background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .playercount {
 	display: inline-block;
+	position: relative;
 	background: rgba(0,0,0,0.4);
 	padding: 3px;
 	font-size: 1em;
 	width: 100%;
 	color: white;
 	text-align: center;
+	animation-delay: 1.2s;
 }
 
 .playercount span {
 	color: cyan;
+}
+
+header {
+	min-height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55) 70%);
+	background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Main Content */
@@ -71,10 +78,6 @@ header {
 .img-store:hover,
 .img-staff:hover {
 	transform: scale(1.05);
-}
-
-.logo {
-	width: 70%;
 }
 
 .img-discord {
@@ -142,7 +145,7 @@ header {
 /* Media Queries */
 
 @media only screen and (max-width: 500px) {
-	.logo {
+	.logo-img {
 		width: 90%;
 	}
 
