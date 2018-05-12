@@ -42,8 +42,9 @@
 
 .playercount {
 	position: relative;
+	padding-left: 20px;
 	font-family: 'Work Sans', sans-serif;
-	font-size: 1vw;
+	font-size: 1.5vw;
 	color: white;
 	text-align: left;
 }
@@ -136,22 +137,5 @@ header {
 /* Media Queries */
 
 @media only screen and (max-width: 500px) {
-	.logo-img {
-		width: 90%;
-	}
 
-	.img-discord,
-	.img-store,
-	.img-staff {
-		width: 100%;
-	}
-
-	.grid-container {
-		  grid-column-gap: 60px;
-	}
-
-	.playercount {
-		width: 80%;
-		font-size: 12px;
-	}
 }
