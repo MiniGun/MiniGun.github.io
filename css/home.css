@@ -156,16 +156,64 @@ p {
 
 @media only screen and (max-width: 960px) {
 	
-	/* Main Content */
+	.new-btn {
+		padding: 1vw 1.9vw;
+		font-size: 1.5vw;
+		margin: 10px;
+	}
+	
+	.logo {
+		width: 90%;
+	}
+	
+	h {
+		font-size: 3vw;
+	}
+
+	h1 {
+		font-size: 2vw;
+	}
+
+	p {
+		font-size: 1.5vw;
+	}
+	
 	.playercount {
-		font-size: 1.2vw;
+		font-size: 2vw;
 	}
 }
 
 @media only screen and (max-width: 640px) {
 	
-	/* Main Content */
+	.new-btn {
+		padding: 1vw 1.9vw;
+		font-size: 2vw;
+		margin: 10px;
+	}
+	
+	.logo {
+		width: 100%;
+	}
+	
+	h {
+		font-size: 4vw;
+	}
+
+	h1 {
+		font-size: 3vw;
+	}
+
+	p {
+		font-size: 2.5vw;
+	}
+	
 	.playercount {
-		font-size: 1.6vw;
+		font-size: 3vw;
+	}
+}
+
+@media only screen and (max-height: 420px) {
+	.body {
+		top: 5vh;
 	}
 }
