@@ -13,11 +13,12 @@
     justify-content: center;
     width: 100%;
     align-items: center;
+	height: 60px;
 }
 
 .logo {
 	transition-duration: 0.4s;
-	padding: 20px;
+	padding: 15px;
 	width: 30%;
 	float: left;
 }
@@ -27,24 +28,79 @@ a {
 	pointer-events: none;
 }
 
-.nav-btn {
+.new-btn {
 	float: right;
+	position: relative;
 	background-color: rgba(255, 255, 255, 0);
-	border: 2px solid #ffffff;
-	color: #ffffff;
-	padding: 1vh 2vw;
+	color: white;
+	background: none;
+	border: none;
+	padding: .1vw 1vw;
 	cursor: pointer;
-	transition-duration: 0.4s;
+	transition: background-color 0.4s;
 	text-transform: uppercase;
 	font-family: 'Source Code Pro', monospace;
-	font-size: .8vw;
-	margin: 10px;
+	font-size: .7vw;
+	margin: 15px;
 	pointer-events: all;
 }
 
-.nav-btn:hover {
-	background-color: #ffffff;
-	color: #595a5b;
+/* Button Animations */
+span{
+  display: block;
+  padding: 10px 20px;
+}
+button::before, button::after{
+  content:"";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #fff;
+}
+
+span::before, span::after{
+  content:"";
+  width:2px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #fff;
+}
+button:hover::before, button:hover::after{
+  width: 100%;
+}
+button:hover span::before, button:hover span::after{
+  height: 100%;
+}
+
+.new-btn::before, .btn-2::after{
+  transition-delay: 0s;
+}
+.new-btn span::before, .btn-2 span::after{
+  transition-delay: 0.2s;
+}
+.new-btn::before{
+  right: 0;
+  top: 0;
+}
+.new-btn::after{
+  left: 0;
+  bottom: 0;
+}
+.new-btn span::before{
+  left: 0;
+  top: 0;
+}
+.new-btn span::after{
+  right: 0;
+  bottom: 0;
+}
+.new-btn:hover::before, .btn-2:hover::after{
+  transition-delay: 0.2s;
+}
+.new-btn:hover span::before, .btn-2:hover span::after{
+  transition-delay: 0s;
 }
 
 /* Staff */

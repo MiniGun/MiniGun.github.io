@@ -1,9 +1,8 @@
 /* Nav */
 .header {
-	width: 100%;
-	text-align: center;
-	border-bottom: 2px solid #ffffff;
-	box-sizing: border-box;
+	position: relative;
+	width: 70%;
+	margin: 50 auto;
 }
 
 .nav {
@@ -14,9 +13,8 @@
 }
 
 .logo {
-	transition-duration: 0.4s;
 	padding: 20px;
-	width: 30%;
+	width: 65%;
 	float: left;
 }
 
@@ -25,35 +23,78 @@ a {
 	pointer-events: none;
 }
 
-.nav-btn {
+.new-btn {
 	float: right;
+	position: relative;
 	background-color: rgba(255, 255, 255, 0);
-	border: 2px solid #ffffff;
-	color: #ffffff;
-	padding: 1vh 2vw;
+	color: white;
+	background: none;
+	border: none;
+	padding: .6vw 1.5vw;
 	cursor: pointer;
-	transition-duration: 0.4s;
+	transition: background-color 0.4s;
 	text-transform: uppercase;
 	font-family: 'Source Code Pro', monospace;
-	font-size: .8vw;
+	font-size: .7vw;
 	margin: 10px;
 	pointer-events: all;
 }
 
-.nav-btn:hover {
-	background-color: #ffffff;
-	color: #595a5b;
+/* Button Animations */
+button::before, button::after{
+  content:"";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #fff;
 }
 
-.playercount {
-	position: relative;
-	padding-left: 20px;
-	font-family: 'Work Sans', sans-serif;
-	font-size: .8vw;
-	color: white;
-	text-align: left;
+span::before, span::after{
+  content:"";
+  width:2px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #fff;
+}
+button:hover::before, button:hover::after{
+  width: 100%;
+}
+button:hover span::before, button:hover span::after{
+  height: 100%;
 }
 
+.new-btn::before, .btn-2::after{
+  transition-delay: 0s;
+}
+.new-btn span::before, .btn-2 span::after{
+  transition-delay: 0.2s;
+}
+.new-btn::before{
+  right: 0;
+  top: 0;
+}
+.new-btn::after{
+  left: 0;
+  bottom: 0;
+}
+.new-btn span::before{
+  left: 0;
+  top: 0;
+}
+.new-btn span::after{
+  right: 0;
+  bottom: 0;
+}
+.new-btn:hover::before, .btn-2:hover::after{
+  transition-delay: 0.2s;
+}
+.new-btn:hover span::before, .btn-2:hover span::after{
+  transition-delay: 0s;
+}
+
+/* Main Content */
 header {
 	min-height: 100%;
 	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55) 70%);
@@ -62,85 +103,69 @@ header {
 	overflow: hidden
 }
 
-/* Main Content */
-
-.img-discord,
-.img-store,
-.img-staff {
-	transition: all 0.4s ease;
-	padding-bottom: 10px;
-}
-
-.img-discord:hover,
-.img-store:hover,
-.img-staff:hover {
-	transform: scale(1.05);
-}
-
-.img-discord {
-	width: 100%;
-}
-
-.img-store {
-	width: 100%;
-}
-
-.img-staff {
-	width: 100%;
-}
-
-.about-text {
-	padding-bottom: 15px;
-}
-
-.vote {
-	flex-basis: 150px;
+.body {
 	position: relative;
-	text-align: center;
-	padding: 5px;
-	margin: 10px;
-}
-
-.vote-btn {
-	background-color: rgb(255,255,255);
-	border: 2px solid #595a5b;
-	padding: 20px 40px;
-	outline: none;
-	cursor: pointer;
-	transition-duration: 0.4s;
-	text-transform: uppercase;
-}
-
-.vote-btn:hover {
-	background-color: #595a5b;
-	color: white;
-}
-
-.vote-container {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 25px auto 0 auto;
-	max-width: 1100px;
-	justify-content: space-around;
-	border-top: 1px solid;
-}
-
-.vote-section {
-	text-align: center;
-	max-width: 900px;
+	top: +160px;
+	width: 70%;
 	margin: 0 auto;
 }
 
-.vote {
-	flex-basis: 250px;
+h {
 	position: relative;
-	text-align: center;
-	padding: 5px;
-	margin: 10px;
+	text-align: left;
+	left: +20px;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 2.2vw;
+	font-weight: bold;
+	color: white;
 }
+
+h1 {
+	position: relative;
+	text-align: left;
+	left: +20px;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 1.5vw;
+	font-weight: 500;
+	color: white;
+}
+
+p {
+	position: relative;
+	text-align: left;
+	left: +20px;
+	padding-bottom: 25px;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 1vw;
+	font-weight: 300;
+	color: #e5e5e5;
+}
+
+.playercount {
+	position: relative;
+	left: +20px;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 500;
+	font-size: 1.5vw;
+	color: white;
+}
+
+
 
 /* Media Queries */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 960px) {
+	
+	/* Main Content */
+	.playercount {
+		font-size: 1.2vw;
+	}
+}
 
+@media only screen and (max-width: 640px) {
+	
+	/* Main Content */
+	.playercount {
+		font-size: 1.6vw;
+	}
 }
