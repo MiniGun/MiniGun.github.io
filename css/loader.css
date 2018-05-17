@@ -29,7 +29,6 @@ canvas {
   bottom   : 0;
   left     : 0;
   margin   : auto;
-    transform: translateY(80px);
 }
 
 @keyframes noise-anim {
