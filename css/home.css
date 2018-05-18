@@ -11,7 +11,6 @@
     justify-content: center;
     width: 100%;
 	top: -50px;
-    align-items: center;
 	animation-name: nav-animation;
 	animation-duration: 1.5s;
 	animation-delay: 2.5s;
@@ -106,6 +105,10 @@ button:hover span::before, button:hover span::after{
 }
 
 /* Main Content */
+.logo-mobile {
+	display: none;
+}
+
 header {
 	min-height: 100%;
 	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55) 70%);
@@ -116,7 +119,7 @@ header {
 
 .body {
 	position: relative;
-	top: +160px;
+	top: 20vh;
 	width: 70%;
 	margin: 0 auto;
 }
@@ -274,21 +277,61 @@ p1 {
 	}
 
 	h1 {
-		font-size: 3vw;
+		font-size: 3.5vw;
 	}
 
 	p,
 	p1 {
-		font-size: 2.5vw;
+		font-size: 3vw;
 	}
 	
 	.playercount {
-		font-size: 3vw;
+		font-size: 3.5vw;
 	}
 }
 
-@media only screen and (max-height: 420px) {
-	.body {
-		top: 5vh;
+@media only screen and (max-width: 420px){
+	
+	.logo {
+		display: none;
+	}
+	
+	.logo-mobile {
+		display: block;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		animation-name: logo-animation;
+		animation-duration: 1.5s;
+		animation-delay: 2.5s;
+		animation-fill-mode: both;
+	}
+
+	@keyframes logo-animation {
+		from {top: -50px; opacity: 0;}
+		to {top: 0px; opacity: 1;}
+	}
+	
+	.new-btn {
+		padding: 1vw 2vw;
+		font-size: 4vw;
+	}
+	
+	h {
+		font-size: 4vw;
+	}
+
+	h1 {
+		font-size: 3.5vw;
+	}
+
+	p,
+	p1 {
+		font-size: 3vw;
+	}
+	
+	.playercount {
+		font-size: 3.5vw;
 	}
 }
