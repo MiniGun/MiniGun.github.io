@@ -209,53 +209,52 @@ p1 {
 		". playercount playercount playercount .";
 		max-height: 100vh;
 	}
+	.logo {
+		justify-content: center;
+	}
+	
+	.logo-img {
+		width: 100%;
+	}
+	
+	.nav {
+		justify-self: center;
+		margin-top: 20px;
+	}
+	
+	.btn {
+		padding: .6vw 1.5vw;
+		font-size: 3vw;
+		margin: 10px;
+	}
+	
+	h {
+		margin-top: 100px;
+		font-size: 5vw;
+		text-align: center;
+	}
+	
+	p {
+		font-size: 4vw;
+		text-align: center;
+	}
+	
+	h1 {
+		font-size: 4.5vw;
+		text-align: center;
+	}
+	
+	p1 {
+		font-size: 4vw;
+		text-align: center;
+	}
+	
+	.playercount {
+		font-size: 4.5vw;
+		text-align: center;
+	}
+	
 }
-
-.logo {
-	justify-content: center;
-}
-
-.logo-img {
-	width: 100%;
-}
-
-.nav {
-	justify-self: center;
-	margin-top: 20px;
-}
-
-.btn {
-	padding: .6vw 1.5vw;
-	font-size: 3vw;
-	margin: 10px;
-}
-
-h {
-	margin-top: 100px;
-	font-size: 5vw;
-	text-align: center;
-}
-
-p {
-	font-size: 4vw;
-	text-align: center;
-}
-
-h1 {
-	font-size: 4.5vw;
-	text-align: center;
-}
-
-p1 {
-	font-size: 4vw;
-	text-align: center;
-}
-
-.playercount {
-	font-size: 4.5vw;
-	text-align: center;
-}
-
 /* Button Animations */
 button::before, button::after{
 	content:"";
