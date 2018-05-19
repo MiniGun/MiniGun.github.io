@@ -244,7 +244,7 @@ p1 {
 	}
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
 	.grid {
 		display: grid;
 		grid-template-columns: 15vw 1fr 1fr 1fr 15vw;
