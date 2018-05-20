@@ -244,6 +244,21 @@ p1 {
 	}
 }
 
+@media only screen and (max-width: 850px) {
+	.nav {
+		justify-self: center;
+		margin-top: 30px;
+	}
+
+	.logo {
+		margin-top: 30px;
+	}
+
+	h {
+		margin-top: 80px;
+	}
+}
+
 @media only screen and (max-width: 500px) {
 	.grid {
 		display: grid;
