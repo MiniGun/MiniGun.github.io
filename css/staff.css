@@ -1,26 +1,107 @@
-/* Scale */
+.page {
+	background-color: white;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	z-index: +100;
+	pointer-events: none;
+}
+  
+.transition { 
+	transition: all 1s;
+	opacity: 0;
+	position: absolute;
+}
+  
+.transition-active {
+	opacity: 1;
+}
+
+.page-in {
+	width: 100vw;
+	height: 100vh;
+	background-color: white;
+	position: absolute;
+	animation-name: page-in-animation;
+	animation-duration: 1.5s;
+	animation-delay: 0s;
+	animation-fill-mode: both;
+}
+
+@keyframes page-in-animation {
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	max-height: 100vh;
+}
+
+/* Grid */
+.nav-grid {
+	display: grid;
+	grid-template-columns: 15vw 1fr 1fr 1fr 15vw;
+	grid-template-areas: 
+	". logo nav nav .";
+}
+
+.content {
+	display: grid;
+	grid-template-columns: 15vw 1fr 1fr 1fr 1fr 1fr 1fr 15vw;
+	grid-template-areas:
+	". h h . . . . ."
+	". h1 h1 h1 . . . ."
+	". MiniGunz DozenSun Greycloak Frannie Xeno Hxtch .";
+}
+
+.MiniGunz {
+	grid-area: MiniGunz;
+}
+
+.DozenSun {
+	grid-area: DozenSun;
+}
+
+.Braena_Greycloak {
+	grid-area: Greycloak;
+}
+
+.FrannieFails {
+	grid-area: Frannie;
+}
+
+.XenoMaster711 {
+	grid-area: Xeno;
+}
+
+.Hxtch {
+	grid-area: Hxtch;
+}
 
 /* Nav */
-.header {
-	width: 100%;
-	text-align: center;
-	border-bottom: 2px solid #ffffff;
-	box-sizing: border-box;
+.logo {
+	position: relative;
+	grid-area: logo;
+	margin-top: 70px;
+	left: 0;
+	align-self: center;
+}
+
+.logo-img {
+	position: relative;
+	width: 120%;
 }
 
 .nav {
-	display: flex;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
-	height: 60px;
-}
-
-.logo {
-	transition-duration: 0.4s;
-	padding: 15px;
-	width: 30%;
-	float: left;
+	position: relative;
+	grid-area: nav;
+	justify-self: end;
+	margin-top: 70px;
 }
 
 a {
@@ -28,135 +109,78 @@ a {
 	pointer-events: none;
 }
 
-.new-btn {
-	float: right;
+.btn {
 	position: relative;
 	background-color: rgba(255, 255, 255, 0);
 	color: white;
 	background: none;
 	border: none;
-	padding: .1vw 1vw;
+	padding: .6vw 1.5vw;
 	cursor: pointer;
 	transition: background-color 0.4s;
 	text-transform: uppercase;
 	font-family: 'Source Code Pro', monospace;
 	font-size: .7vw;
-	margin: 15px;
+	margin: 10px;
 	pointer-events: all;
 }
 
-/* Button Animations */
-span{
-  display: block;
-  padding: 10px 20px;
-}
-button::before, button::after{
-  content:"";
-  width: 0;
-  height: 2px;
-  position: absolute;
-  transition: all 0.2s linear;
-  background: #fff;
-}
-
-span::before, span::after{
-  content:"";
-  width:2px;
-  height:0;
-  position: absolute;
-  transition: all 0.2s linear;
-  background: #fff;
-}
-button:hover::before, button:hover::after{
-  width: 100%;
-}
-button:hover span::before, button:hover span::after{
-  height: 100%;
-}
-
-.new-btn::before, .btn-2::after{
-  transition-delay: 0s;
-}
-.new-btn span::before, .btn-2 span::after{
-  transition-delay: 0.2s;
-}
-.new-btn::before{
-  right: 0;
-  top: 0;
-}
-.new-btn::after{
-  left: 0;
-  bottom: 0;
-}
-.new-btn span::before{
-  left: 0;
-  top: 0;
-}
-.new-btn span::after{
-  right: 0;
-  bottom: 0;
-}
-.new-btn:hover::before, .btn-2:hover::after{
-  transition-delay: 0.2s;
-}
-.new-btn:hover span::before, .btn-2:hover span::after{
-  transition-delay: 0s;
-}
-
 /* Staff */
-.staff-team {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	margin: 20px auto 10px auto;
-	width: 85vw;
-}
-
-.staff {
-	padding: 40px 0;
-}
-
-.staff h2 {
+h {
+	position: relative;
+	grid-area: h;
 	color: white;
-	text-align: center;
+	margin-left: 2%;
+	margin-top: 50px;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 200;
+	font-size: 3vw;
+}
+
+h1 {
+	position: relative;
+	grid-area: h1;
+	color: white;
+	margin-left: 2%;
 	margin-top: 0;
 	font-family: 'Work Sans', sans-serif;
-	font-size: 2.5vw;
+	font-weight: 200;
+	font-size: 1.5vw;
 }
 
-.staff h3 {
+h2 {
 	color: white;
-	text-align: center;
-	margin-top: 0;
+	margin-bottom: 10px;
 	font-family: 'Work Sans', sans-serif;
 	font-size: 1vw;
+	font-weight: 200;
 }
 
-.staff h4 {
-	color: white;
-	text-align: center;
-	margin-top: 0;
-	font-family: 'Work Sans', sans-serif;
-	font-size: 1.3vw;
-	font-weight: 100;
+.content {
+	margin-top: 70px;
 }
 
-.staff-team > div {
+.MiniGunz,
+.Braena_Greycloak,
+.DozenSun,
+.FrannieFails,
+.XenoMaster711,
+.Hxtch {
 	padding: 15px;
-	margin-top: 2.2%;
 	background-color: rgba(0,0,0,0.4);
 	color: white;
 	text-align: center;
-	width: 15%;
+	justify-self: center;
+	width: 90%;
 }
 
-.staff-team img {
+.staff-img {
 	width: 100%;
 	margin-top: 20px;
 }
 
-.advisor,
 .owner,
+.advisor,
 .secretary,
 .head-builder,
 .admin,
@@ -174,163 +198,71 @@ button:hover span::before, button:hover span::after{
 .helper {background-color: #5555FF;}
 
 @media only screen and (max-width: 960px) {
-	.logo {
-		width: 50%;
-	}
-
-	.nav-btn {
-	text-transform: uppercase;
-	font-family: 'Source Code Pro', monospace;
-	font-size: 1vw;
-}
-
-	.staff-team {
-		margin: 25px auto 10px auto;
-		width: 95vw;
-	}
-
-	.staff h4 {
-		font-family: 'Work Sans', sans-serif;
-		font-size: 1.3vw;
-		font-weight: 200;
-	}
 	
-	.advisor,
-	.owner,
-	.secretary,
-	.head-builder,
-	.admin,
-	.helper {
-		font-family: 'Work Sans', sans-serif;
-		font-size: 1vw;
-		padding: 1vw;
-	}
-
-	.staff h2 {
-		font-family: 'Work Sans', sans-serif;
-		font-size: 3vw;
-	}
-
-	.staff h3 {
-		color: white;
-		text-align: center;
-		margin-top: 0;
-		font-family: 'Work Sans', sans-serif;
-		font-size: 1.5vw;
-	}
 }
 
 @media only screen and (max-width: 850px) {
-	.logo {
-		width: 60%;
-	}
-
-	.nav-btn {
-	text-transform: uppercase;
-	font-family: 'Source Code Pro', monospace;
-	font-size: 1.3vw;
-}
-
-	.staff {
-	padding: 15px 0;
-	}
-
-	.staff-team {
-		margin: 0px auto 10px auto;
-		width: 95vw;
-	}
-
-	.staff h4 {
-		font-family: 'Work Sans', sans-serif;
-		font-size: 1.3vw;
-		font-weight: 200;
-	}
 	
-	.advisor,
-	.owner,
-	.secretary,
-	.head-builder,
-	.admin,
-	.helper {
-		font-family: 'Work Sans', sans-serif;
-		font-size: 1vw;
-		padding: 1vw;
-	}
-
-	.staff h2 {
-		font-family: 'Work Sans', sans-serif;
-		font-size: 3vw;
-	}
-
-	.staff h3 {
-		color: white;
-		text-align: center;
-		margin-top: 0;
-		font-family: 'Work Sans', sans-serif;
-		font-size: 1.5vw;
-	}
-	.staff-team > div {
-		padding: 15px;
-		margin-top: 2.2%;
-		background-color: rgba(0,0,0,0.4);
-		color: white;
-		text-align: center;
-		width: 15%;
-	}
 }
 
 @media only screen and (max-width: 500px) {
-	.logo {
-		width: 100%;
-	}
-
-	.nav-btn {
-		text-transform: uppercase;
-		font-family: 'Source Code Pro', monospace;
-		font-size: 2.5vw;
-	}
-
-	.staff-team {
-		margin: 25px auto 10px auto;
-		width: 95vw;
-	}
-
-	.staff h4 {
-		font-family: 'Work Sans', sans-serif;
-		font-size: 2.7vw;
-		font-weight: 300;
-	}
 	
-	.advisor,
-	.owner,
-	.secretary,
-	.head-builder,
-	.admin,
-	.helper {
-		font-family: 'Work Sans', sans-serif;
-		font-size: 2vw;
-		padding: 1vw;
-	}
-
-	.staff h2 {
-		font-family: 'Work Sans', sans-serif;
-		font-size: 5vw;
-	}
-
-	.staff h3 {
-		color: white;
-		text-align: center;
-		margin-top: 0;
-		font-family: 'Work Sans', sans-serif;
-		font-size: 2vw;
-	}
-
-	.staff-team > div {
-		padding: 15px;
-		margin-top: 2.2%;
-		background-color: rgba(0,0,0,0.4);
-		color: white;
-		text-align: center;
-		width: 30%;
-	}
 }
+
+@media only screen and (max-width: 350px) {
+
+}
+
+/* Button Animations */
+button::before, button::after{
+	content:"";
+	width: 0;
+	height: 2px;
+	position: absolute;
+	transition: all 0.2s linear;
+	background: #fff;
+  }
+  
+  span::before, span::after{
+	content:"";
+	width:2px;
+	height:0;
+	position: absolute;
+	transition: all 0.2s linear;
+	background: #fff;
+  }
+  button:hover::before, button:hover::after{
+	width: 100%;
+  }
+  button:hover span::before, button:hover span::after{
+	height: 100%;
+  }
+  
+  .btn::before, .btn::after{
+	transition-delay: 0s;
+  }
+  .btn span::before, .btn span::after{
+	transition-delay: 0.2s;
+  }
+  .btn::before{
+	right: 0;
+	top: 0;
+  }
+  .btn::after{
+	left: 0;
+	bottom: 0;
+  }
+  .btn span::before{
+	left: 0;
+	top: 0;
+  }
+  .btn span::after{
+	right: 0;
+	bottom: 0;
+  }
+  .btn:hover::before, .btn:hover::after{
+	transition-delay: 0.2s;
+  }
+  .btn:hover span::before, .btn:hover span::after{
+	transition-delay: 0s;
+  }

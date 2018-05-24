@@ -10,19 +10,21 @@
 		<link rel="stylesheet" href="css/home.css">
 		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,600" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,500,600,bold" rel="stylesheet">
-		<script src="/js/mc-player-counter.min.js"></script>
-	</head>
-
+	</head>	
 	<body>
 		<header>
-		<div class="grid">
+
+			<div class="page-in"></div>
+			<div class="page transition"></div>
+
+			<div class="grid">
 				<a class="logo" href="/"><img class="logo-img" src="img/logo.png" alt="There should be something else here, please contact the owner."></a>
 				
 				<div class="nav">
-					<a href="/home.html"><button class="btn"><span>Home</span></button></a>
-					<a href="/home.html"><button class="btn"><span>Store</span></button></a>
-					<a href="/staff.html"><button class="btn"><span>Staff</span></button></a>
-					<a href="/home.html"><button class="btn"><span>Vote</span></button></a>
+					<a href="/home.html"><button class="btn" id="btn"><span>Home</span></button></a>
+					<a href="/home.html"><button class="btn" id="btn1"><span>Store</span></button></a>
+					<a href="/staff.html"><button class="btn" id="btn2"><span>Staff</span></button></a>
+					<a href="/home.html"><button class="btn" id="btn3"><span>Vote</span></button></a>
 				</div>
 				
 				<div class="content">
@@ -32,15 +34,14 @@
 				<p>In early 2018 four friends decided to create their own Minecraft network
 				<br>(now know as Glitched Network). Currently, they have a towny server in development
 				<br>that will be released in the near future. If you would like to see the future plans
-				<br>of Glitched Network, Click Here.
+				<br>of Glitched Network, <a class ="link" href="">Click Here.</a>
 				<br></p>
 				<h1>Latest Network Announcement</h1>
 				<p1>Welcome to Glitched Network's official website! We will keep the latest server 
 				<br>announcements posted here.</p1>
 				<div class="playercount" style="opacity: 1;">
 					<p2>Join <span data-playercounter-ip="play.glitched.network">0</span> other players on Play.Glitched.Network</p2>
-				</div>
-			<script src="https://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
+			</div>
 		</div>
 		<div class="glitch" style="z-index:-5;">
 			<div class="glitch-img"></div>
@@ -49,5 +50,8 @@
 			<div class="glitch-img"></div>
 		</div>
 	</header>
+	<script src="/js/jquery-3.3.1.min.js"></script>
+	<script src="/js/page-transition.js"></script>
+	<script src="/js/mc-player-counter.min.js"></script>
 	</body>
 </html>
