@@ -229,8 +229,15 @@ p1 {
 	to {left: 0px; opacity: 1;}
 }
 
-link {
-	color: #101010;
+.link {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	pointer-events: all;
+}
+
+.link:hover {
+	text-decoration: underline;
 }
 
 

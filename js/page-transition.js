@@ -17,13 +17,13 @@ $("#btn3").click(function() {
 $('#btn').click(function(e) {
   e.preventDefault();
   var linkUrl = $(this).attr('href');
-  setTimeout(function(url) { window.location = '/index.html'; }, 1000, linkUrl);
+  setTimeout(function(url) { window.location = '/'; }, 1000, linkUrl);
 });
 
 $('#btn1').click(function(e) {
   e.preventDefault();
   var linkUrl = $(this).attr('href');
-  setTimeout(function(url) { window.location = '/index.html'; }, 1000, linkUrl);
+  setTimeout(function(url) { window.location = '/'; }, 1000, linkUrl);
 });
 
 $('#btn2').click(function(e) {
@@ -35,5 +35,5 @@ $('#btn2').click(function(e) {
 $('#btn3').click(function(e) {
   e.preventDefault();
   var linkUrl = $(this).attr('href');
-  setTimeout(function(url) { window.location = '/index.html'; }, 1000, linkUrl);
+  setTimeout(function(url) { window.location = '/'; }, 1000, linkUrl);
 });
