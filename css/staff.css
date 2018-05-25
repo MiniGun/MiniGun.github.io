@@ -268,13 +268,22 @@ button::before, button::after{
   }
 
   /* Button Active */
-.current span::before, .current span::after{
+  .current span::before, .current span::after{
 	content:"";
 	width: 2px;
-	height: 100%;
+	height: 0%;
 	position: absolute;
 	transition: all 0.2s linear;
 	background: #fff;
+	animation-name: button-animation;
+	animation-duration: .5s;
+	animation-delay: 1s;
+	animation-fill-mode: both;
+}
+
+@keyframes button-animation {
+	from {height: 0%;}
+	to {height: 100%;}
 }
 
 .current::before, .current::after{
