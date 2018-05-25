@@ -266,3 +266,22 @@ button::before, button::after{
   .btn:hover span::before, .btn:hover span::after{
 	transition-delay: 0s;
   }
+
+  /* Button Active */
+.current span::before, .current span::after{
+	content:"";
+	width: 2px;
+	height: 100%;
+	position: absolute;
+	transition: all 0.2s linear;
+	background: #fff;
+}
+
+.current::before, .current::after{
+	content:"";
+	width: 0px;
+	height: 2px;
+	position: absolute;
+	transition: all 0.2s linear;
+	background: #fff;
+}
