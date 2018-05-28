@@ -229,17 +229,195 @@ p1 {
 	to {left: 0px; opacity: 1;}
 }
 
-.link {
+.info {
 	color: white;
 	text-decoration: none;
 	cursor: pointer;
 	pointer-events: all;
 }
 
-.link:hover {
+.info:hover {
 	text-decoration: underline;
 }
 
+.h-active {
+	animation-name: h-transition;
+	animation-duration: 1.5s;
+	animation-delay: .5s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+
+@keyframes h-transition {
+	from {left: 0px; opacity: 1;}
+	to {left: 100px; opacity: 0;}
+}
+
+.p-active {
+	animation-name: p-transition;
+	animation-duration: 1.5s;
+	animation-delay: .8s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+
+@keyframes p-transition {
+	from {left: 0px; opacity: 1;}
+	to {left: 100px; opacity: 0;}
+}
+
+.h1-active {
+	animation-name: h1-transition;
+	animation-duration: 1.5s;
+	animation-delay: 1.1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+
+@keyframes h1-transition {
+	from {left: 0px; opacity: 1;}
+	to {left: 100px; opacity: 0;}
+}
+
+.p1-active {
+	animation-name: p1-transition;
+	animation-duration: 1.5s;
+	animation-delay: 1.4s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+
+@keyframes p1-transition {
+	from {left: 0px; opacity: 1;}
+	to {left: 100px; opacity: 0;}
+}
+
+.playercount-active {
+	animation-name: playercount-transition;
+	animation-duration: 1.5s;
+	animation-delay: 1.7s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+
+@keyframes playercount-transition {
+	from {left: 0px; opacity: 1;}
+	to {left: 100px; opacity: 0;}
+}
+
+h2 {
+	display: none;
+	position: absolute;
+	grid-area: h;
+	margin-top: 200px;
+	text-align: left;
+	opacity: 0;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 2.2vw;
+	font-weight: bold;
+	color: white;
+}
+
+p3 {
+	display: none;
+	position: absolute;
+	position: relative;
+	grid-area: p;
+	text-align: left;
+	opacity: 0;
+	padding-bottom: 25px;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 1vw;
+	font-weight: 300;
+	color: #e5e5e5;
+}
+
+h3 {
+	display: none;
+	position: absolute;
+	position: relative;
+	text-align: left;
+	grid-area: h1;
+	opacity: 0;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 1.5vw;
+	font-weight: 500;
+	color: white;
+}
+
+p4 {
+	display: none;
+	position: absolute;
+	position: relative;
+	text-align: left;
+	grid-area: p1;
+	opacity: 0;
+	padding-bottom: 25px;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 1vw;
+	font-weight: 300;
+	color: #e5e5e5;
+}
+
+.h2-active {
+	display: block;
+	position: relative;
+	animation-name: h2-transition;
+	animation-duration: 1.5s;
+	animation-delay: 2s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+
+@keyframes h2-transition {
+	from {left: 100px; opacity: 0;}
+	to {left: 0px; opacity: 1;}
+}
+
+.p3-active {
+	display: block;
+	position: relative;
+	animation-name: p2-transition;
+	animation-duration: 1.5s;
+	animation-delay: 2.3s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+
+@keyframes p2-transition {
+	from {left: 100px; opacity: 0;}
+	to {left: 0px; opacity: 1;}
+}
+
+.h3-active {
+	display: block;
+	position: relative;
+	animation-name: h3-transition;
+	animation-duration: 1.5s;
+	animation-delay: 2.6s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+
+@keyframes h3-transition {
+	from {left: 100px; opacity: 0;}
+	to {left: 0px; opacity: 1;}
+}
+
+.p4-active {
+	display: block;
+	position: relative;
+	animation-name: p3-transition;
+	animation-duration: 1.5s;
+	animation-delay: 3s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+
+@keyframes p3-transition {
+	from {left: 100px; opacity: 0;}
+	to {left: 0px; opacity: 1;}
+}
 
 /* Media Queries */
 
