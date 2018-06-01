@@ -1,17 +1,17 @@
 $("#btn").click(function() {
-  $('transition').toggleClass('transition-active');
+  $('.transition').toggleClass('transition-active');
 });
 
 $("#btn1").click(function() {
-  $('transition').toggleClass('transition-active');
+  $('.transition').toggleClass('transition-active');
 });
 
 $("#btn2").click(function() {
-  $('transition').toggleClass('transition-active');
+  $('.transition').toggleClass('transition-active');
 });
 
 $("#btn3").click(function() {
-  $('transition').toggleClass('transition-active');
+  $('.transition').toggleClass('transition-active');
 });
 
 $('#btn').click(function(e) {

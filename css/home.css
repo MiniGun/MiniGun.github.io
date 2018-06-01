@@ -352,7 +352,6 @@ p4 {
 	text-align: left;
 	grid-area: p1;
 	opacity: 0;
-	padding-bottom: 25px;
 	font-family: 'Work Sans', sans-serif;
 	font-size: 1vw;
 	font-weight: 300;
@@ -405,8 +404,8 @@ p4 {
 }
 
 .p4-active {
-	display: block;
 	position: relative;
+	display: block;
 	animation-name: p3-transition;
 	animation-duration: 1.5s;
 	animation-delay: 3s;
