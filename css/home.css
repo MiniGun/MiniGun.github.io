@@ -204,13 +204,37 @@ p4 {
 }
 
 /* Animations */
-/* Page Transition */ 
+@keyframes page-in {
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+
+@keyframes content-in {
+	from {left: 100px; opacity: 0;}
+	to {left: 0; opacity: 1;}
+}
+
+@keyframes content-out {
+	from {left: 0; opacity: 1;}
+	to {left: 100; opacity: 0;}
+}
+
+@keyframes nav-in {
+	from {top: -50px; opacity: 0;}
+	to {top: 0; opacity: 1;}
+}
+
+@keyframes nav-out {
+	from {top: 0; opacity: 1;}
+	to {top: -50px; opacity: 0;}
+}
+/* Page Load */ 
 .page-in {
 	width: 100vw;
 	height: 100vh;
 	background-color: white;
 	position: absolute;
-	animation-name: page-in-animation;
+	animation-name: page-in;
 	animation-duration: 1.5s;
 	animation-delay: 0s;
 	animation-fill-mode: both;
@@ -223,7 +247,7 @@ p4 {
 }
 
 .logo-img {
-	animation-name: logo-animation;
+	animation-name: nav-in;
 	animation-duration: 1.5s;
 	animation-delay: .5s;
 	animation-timing-function: ease-in-out;
@@ -231,7 +255,7 @@ p4 {
 }
 
 .nav {
-	animation-name: nav-animation;
+	animation-name: nav-in;
 	animation-duration: 1.5s;
 	animation-delay: .5s;
 	animation-timing-function: ease-in-out;
@@ -239,7 +263,7 @@ p4 {
 }
 
 h {
-	animation-name: h-animation;
+	animation-name: content-in;
 	animation-duration: 1.5s;
 	animation-delay: .5s;
 	animation-timing-function: ease-in-out;
@@ -247,7 +271,7 @@ h {
 }
 
 p {
-	animation-name: p-animation;
+	animation-name: content-in;
 	animation-duration: 1.5s;
 	animation-delay: .8s;
 	animation-timing-function: ease-in-out;
@@ -255,7 +279,7 @@ p {
 }
 
 h1 {
-	animation-name: h1-animation;
+	animation-name: content-in;
 	animation-duration: 1.5s;
 	animation-delay: 1.1s;
 	animation-timing-function: ease-in-out;
@@ -263,7 +287,7 @@ h1 {
 }
 
 p1 {
-	animation-name: p1-animation;
+	animation-name: content-in;
 	animation-duration: 1.5s;
 	animation-delay: 1.4s;
 	animation-timing-function: ease-in-out;
@@ -271,51 +295,11 @@ p1 {
 }
 
 .playercount {
-	animation-name: playercount-animation;
+	animation-name: content-in;
 	animation-duration: 1.5s;
 	animation-delay: 1.7s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: both;
-}
-
-@keyframes page-in-animation {
-	from {opacity: 1;}
-	to {opacity: 0;}
-}
-
-@keyframes logo-animation {
-	from {top: -50px; opacity: 0;}
-	to {top: 0; opacity: 1;}
-}
-
-@keyframes nav-animation {
-	from {top: -50px; opacity: 0;}
-	to {top: 0; opacity: 1;}
-}
-
-@keyframes h-animation {
-	from {left: 100px; opacity: 0;}
-	to {left: 0; opacity: 1;}
-}
-
-@keyframes p-animation {
-	from {left: 100px; opacity: 0;}
-	to {left: 0; opacity: 1;}
-}
-
-@keyframes h1-animation {
-	from {left: 100px; opacity: 0;}
-	to {left: 0; opacity: 1;}
-}
-
-@keyframes p1-animation {
-	from {left: 100px; opacity: 0;}
-	to {left: 0; opacity: 1;}
-}
-
-@keyframes playercount-animation {
-	from {left: 100px; opacity: 0;}
-	to {left: 0; opacity: 1;}
 }
   
 .transition-active {
@@ -325,7 +309,7 @@ p1 {
 /* Content Out */
 
 .h-active {
-	animation-name: h-transition;
+	animation-name: content-out;
 	animation-duration: 1.5s;
 	animation-delay: .5s;
 	animation-timing-function: ease-in-out;
@@ -333,7 +317,7 @@ p1 {
 }
 
 .p-active {
-	animation-name: p-transition;
+	animation-name: content-out;
 	animation-duration: 1.5s;
 	animation-delay: .8s;
 	animation-timing-function: ease-in-out;
@@ -341,7 +325,7 @@ p1 {
 }
 
 .h1-active {
-	animation-name: h1-transition;
+	animation-name: content-out;
 	animation-duration: 1.5s;
 	animation-delay: 1.1s;
 	animation-timing-function: ease-in-out;
@@ -349,7 +333,7 @@ p1 {
 }
 
 .p1-active {
-	animation-name: p1-transition;
+	animation-name: content-out;
 	animation-duration: 1.5s;
 	animation-delay: 1.4s;
 	animation-timing-function: ease-in-out;
@@ -357,43 +341,18 @@ p1 {
 }
 
 .playercount-active {
-	animation-name: playercount-transition;
+	animation-name: content-out;
 	animation-duration: 1.5s;
 	animation-delay: 1.7s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: both;
 }
 
-@keyframes h-transition {
-	from {left: 0; opacity: 1;}
-	to {left: 100; opacity: 0;}
-}
-
-@keyframes p-transition {
-	from {left: 0; opacity: 1;}
-	to {left: 100px; opacity: 0;}
-}
-
-@keyframes h1-transition {
-	from {left: 0; opacity: 1;}
-	to {left: 100px; opacity: 0;}
-}
-
-@keyframes p1-transition {
-	from {left: 0; opacity: 1;}
-	to {left: 100px; opacity: 0;}
-}
-
-@keyframes playercount-transition {
-	from {left: 0; opacity: 1;}
-	to {left: 100px; opacity: 0;}
-}
-
 /* Content In */
 .h2-active {
 	display: block;
 	position: relative;
-	animation-name: h2-transition;
+	animation-name: content-in;
 	animation-duration: 1.5s;
 	animation-delay: 2s;
 	animation-timing-function: ease-in-out;
@@ -403,7 +362,7 @@ p1 {
 .p3-active {
 	display: block;
 	position: relative;
-	animation-name: p2-transition;
+	animation-name: content-in;
 	animation-duration: 1.5s;
 	animation-delay: 2.4s;
 	animation-timing-function: ease-in-out;
@@ -413,7 +372,7 @@ p1 {
 .h3-active {
 	display: block;
 	position: relative;
-	animation-name: h3-transition;
+	animation-name: content-in;
 	animation-duration: 1.5s;
 	animation-delay: 2.8s;
 	animation-timing-function: ease-in-out;
@@ -423,32 +382,13 @@ p1 {
 .p4-active {
 	display: block;
 	position: relative;
-	animation-name: p4-transition;
+	animation-name: content-in;
 	animation-duration: 1.5s;
 	animation-delay: 3.2s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: both;
 }
 
-@keyframes h2-transition {
-	from {left: 100px; opacity: 0;}
-	to {left: 0; opacity: 1;}
-}
-
-@keyframes p2-transition {
-	from {left: 100px; opacity: 0;}
-	to {left: 0; opacity: 1;}
-}
-
-@keyframes h3-transition {
-	from {left: 100px; opacity: 0;}
-	to {left: 0; opacity: 1;}
-}
-
-@keyframes p4-transition {
-	from {left: 100px; opacity: 0;}
-	to {left: 0; opacity: 1;}
-}
 /* Button Animations */
 button::before, button::after{
 	content:"";
