@@ -1,3 +1,11 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
 .p-canvas-webgl {
 	position: fixed;
 	z-index: -1;
@@ -241,7 +249,7 @@ p4 {
 	background-color: white;
 	position: absolute;
 	animation-name: page-in;
-	animation-duration: 1.5s;
+	animation-duration: 2s;
 	animation-delay: 0s;
 	animation-fill-mode: both;
 }
