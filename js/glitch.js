@@ -366,7 +366,7 @@ class BackgroundImage {
     cameraBack.position.set(0, 0, 100);
     cameraBack.lookAt(new THREE.Vector3());
   
-    bgImg.init('https://raw.githubusercontent.com/MiniGun/MiniGun.github.io/master/img/Background.png', () => {
+    bgImg.init('img/Background.png', () => {
       sceneBack.add(bgImg.obj);
       scene.add(postEffect.obj);
     })
