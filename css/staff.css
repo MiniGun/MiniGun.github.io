@@ -6,7 +6,13 @@
 	z-index: +100;
 	pointer-events: none;
 }
-  
+
+body {
+	min-height: 150%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .transition { 
 	transition: all 1s;
 	opacity: 0;
@@ -36,10 +42,6 @@
 * {
 	margin: 0;
 	padding: 0;
-}
-
-header {
-	max-height: 100vh;
 }
 
 /* Grid */
@@ -89,7 +91,7 @@ header {
 	grid-area: logo;
 	margin-top: 70px;
 	left: 0;
-	align-self: center;
+	justify-self: center;
 }
 
 .logo-img {
@@ -110,6 +112,7 @@ a {
 }
 
 .btn {
+	will-change: right, top, height, width;
 	position: relative;
 	background-color: rgba(255, 255, 255, 0);
 	color: white;
@@ -143,6 +146,7 @@ h1 {
 	color: white;
 	margin-left: 2%;
 	margin-top: 0;
+	margin-bottom: 5px;
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 200;
 	font-size: 1.5vw;
@@ -198,7 +202,53 @@ h2 {
 .helper {background-color: #5555FF;}
 
 @media only screen and (max-width: 960px) {
+	.nav-grid {
+		grid-template-columns: 15vw 1fr 1fr 1fr 15vw;
+		grid-template-areas: 
+		". logo logo logo ."
+		". nav nav nav .";
+	}
+
+	.content {
+		grid-template-columns: 15vw 1fr 1fr 1fr 15vw;
+		grid-template-areas:
+		". h h h ."
+		". h1 h1 h1 ."
+		". MiniGunz DozenSun Greycloak ."
+		". Frannie Xeno Hxtch .";
+	}
+
+	.logo {
+		width: 60%;
+		left: -4vw;
+		justify-self: center;
+	}
+
+	.nav {
+		margin-top: 10px;
+		justify-self: center;
+	}
+
+	.btn {
+		padding: 1vw 2vw;
+		font-size: 2vw;
+	}
+
+	h {
+		margin-top: -50px;
+		justify-self: center;
+		font-size: 4vw;
+	}
 	
+	h1 {
+		margin-top: -15px;
+		justify-self: center;
+		font-size: 2vw;
+	}
+
+	h2 {
+		font-size: 1.5vw
+	}
 }
 
 @media only screen and (max-width: 850px) {
