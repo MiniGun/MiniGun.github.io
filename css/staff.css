@@ -58,7 +58,7 @@ body {
 	grid-template-areas:
 	". h h . . . . ."
 	". h1 h1 h1 . . . ."
-	". MiniGunz DozenSun Greycloak Frannie Xeno Hxtch .";
+	". MiniGunz Greycloak DozenSun Frannie Xeno Hxtch .";
 }
 
 .MiniGunz {
@@ -214,7 +214,7 @@ h2 {
 		grid-template-areas:
 		". h h h ."
 		". h1 h1 h1 ."
-		". MiniGunz DozenSun Greycloak ."
+		". MiniGunz Greycloak DozenSun ."
 		". Frannie Xeno Hxtch .";
 	}
 
