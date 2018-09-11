@@ -58,7 +58,7 @@ body {
 	grid-template-areas:
 	". h h . . . . ."
 	". h1 h1 h1 . . . ."
-	". MiniGunz DozenSun Greycloak Frannie Xeno Hxtch .";
+	". MiniGunz Greycloak DozenSun Frannie Xeno Hxtch .";
 }
 
 .MiniGunz {
@@ -195,7 +195,7 @@ h2 {
 }
 
 .owner {background-color: #FF5555;}
-.secretary {background-color: #AA00AA;}
+.secretary {background-color: #962222;}
 .advisor {background-color: #555555;}
 .admin {background-color: #962222;}
 .head-builder {background-color: #00AAAA;}
@@ -214,7 +214,7 @@ h2 {
 		grid-template-areas:
 		". h h h ."
 		". h1 h1 h1 ."
-		". MiniGunz DozenSun Greycloak ."
+		". MiniGunz Greycloak DozenSun ."
 		". Frannie Xeno Hxtch .";
 	}
 
