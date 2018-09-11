@@ -118,7 +118,7 @@ a {
 	color: white;
 	background: none;
 	border: none;
-	padding: .6vw 1.5vw;
+	padding: .8vw 1.8vw;
 	cursor: pointer;
 	transition: background-color 0.4s;
 	text-transform: uppercase;
@@ -266,8 +266,8 @@ h2 {
 /* Button Animations */
 button::before, button::after{
 	content:"";
+	height: 2px;
 	width: 0;
-	height: 1.5px;
 	position: absolute;
 	transition: all 0.2s linear;
 	background: #fff;
@@ -275,7 +275,7 @@ button::before, button::after{
   
 span::before, span::after{
 	content:"";
-	width: 1.5px;
+	width: 2px;
 	height: 0;
 	position: absolute;
 	transition: all 0.2s linear;

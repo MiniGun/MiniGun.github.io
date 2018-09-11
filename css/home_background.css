@@ -12,7 +12,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden
+    overflow: hidden;
+    will-change: auto;
 }
 
 .glitch-img {
@@ -26,7 +27,8 @@
     background-size: cover;
 	filter:blur(5px);
     transform: translate3d(0, 0, 0);
-    background-blend-mode: none
+    background-blend-mode: none;
+    will-change: auto;
 }
 
 .glitch-img:nth-child(n+2) {
