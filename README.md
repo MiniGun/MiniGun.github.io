@@ -1,1 +1,0 @@
-This is where I host my personal website that I'm using to learn html

@@ -1,17 +1,74 @@
 body {
-	background-color: #252525
+	background-color: #252525;
+	display: grid;
+	grid-template-columns: 15vw 1fr 1fr 1fr 1fr 1fr 15vw;
+	grid-template-areas: 
+	". . btn1 logo logo . ."
+	". . . . . . ."
+	". . . . . . ."
+	". . . . . . ."
+	". . . . . . ."
+	". . . . . . .";
+	max-height: 100vh;
+}
+
+.btn {
+	text-decoration: none;
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	grid-area: btn1;
+	width: 100px;
 }
 
 #logo {
-	width: 150PX;
-	height: 150px;
 	display: block;
 	position: relative;
 	fill: #DB4105;
 	stroke: #DB4105;
 	stroke-miterlimit: 5;
+	grid-area: logo;
+	justify-self: center;
 }
 
-#Logo-text {
-	display: none;
+.Animate-Path {
+	width: 300px;
+	height: 300px;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-name: logo;
+	animation-delay: 1.7s;
+	animation-duration: 1s;
+}
+  
+@keyframes logo {
+	from { height: 300px; }
+	to { height: 50px; }
+}
+  
+.Animate-Draw {
+	fill-opacity: 0;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-name: Stroke, DrawLine, FillIn;
+}
+  
+#Draw-Text { 
+	animation-delay: 2.5s, 0s, 1.7s;
+	animation-duration: .5s, 2.5s, .5s;
+	stroke-dashArray: 2000;
+	stroke-dashoffset: 2500;
+}
+  
+@keyframes Stroke {
+	from { stroke-opacity: 1; }
+	to { stroke-opacity: 0; }
+}
+  
+@keyframes DrawLine {
+	to { stroke-dashOffset: 1; }
+}
+  
+@keyframes FillIn {
+	from { fill-opacity: 0; }
+	to { fill-opacity: 1; }
 }
