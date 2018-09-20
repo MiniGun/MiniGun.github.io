@@ -19,6 +19,12 @@ body {
 	height: 0;
 }
 
+.button2 {
+	grid-area: btn1;
+	justify-self: center;
+	height: 0;
+}
+
 .btn {
 	text-decoration: none;
 	color: white;
