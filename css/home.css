@@ -37,20 +37,6 @@ body {
 	pointer-events: all;
 }
 
-.btn1 {
-	text-decoration: none;
-	color: white;
-	font-family: 'Quicksand', sans-serif;
-	font-size: 18px;
-	vertical-align: middle;
-	padding-top: 20px;
-	grid-area: btn1;
-	justify-self: center;
-	text-align: center;
-	height: 35px;
-	width: 125px;
-}
-
 #logo {
 	display: block;
 	position: relative;
