@@ -13,11 +13,11 @@
 }
 
 header {
-	background-image: url("/images/background1.jpg");
+	background-image: url("/images/background2.jpg");
 	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
 	min-height: 100%;
 	background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 	overflow: hidden
 }
 
@@ -95,8 +95,8 @@ header {
 #logo {
 	display: block;
 	position: relative;
-	fill: #C70039;
-	stroke: #C70039;
+	fill: #aa0041;
+	stroke: #aa0041;
 	stroke-miterlimit: 5;
 	grid-area: logo;
 	justify-self: center;
