@@ -145,6 +145,7 @@ p1 {
 .Animate-Path {
 	width: 300px;
 	height: 300px;
+	will-change: height, width;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
 	animation-name: logo;
@@ -167,8 +168,8 @@ p1 {
 }
 
 @keyframes logo {
-	from { height: 300px; }
-	to { height: 60px; }
+	from { height: 300px; width: 300px; }
+	to { height: 70px; width: 70px; }
 }
 
 @keyframes buttons {
