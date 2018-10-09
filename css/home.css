@@ -1,5 +1,5 @@
 header {
-	background-color: #1f1f1f;
+	background-color: #1a1a1a;
 	min-height: 100%;
 	background-repeat: no-repeat;
     background-size: cover;
@@ -34,16 +34,11 @@ header {
 	background-color: #ffffff0c;
 }
 
-p {
-	color: #CECCCE;
-	font-family: 'Comfortaa', sans-serif;
-	font-size: .7vw;
-}
-
+p,
 p1 {
 	color: #CECCCE;
 	font-family: 'Comfortaa', sans-serif;
-	font-size: .7vw;
+	font-size: .6vw;
 }
 
 /* Animations */
@@ -139,8 +134,14 @@ button::after{
 	left: 0;
   }
 
-/* Media Queries */
-
+  /* Media Queries */
 @media only screen and (max-width: 960px) {
+   .btn {
+	   font-size: 1.2vw;
+   }
 	
+	p,
+    p1 {
+        font-size: 1.1vw;
+    }
 }
