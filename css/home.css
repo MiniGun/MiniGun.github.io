@@ -46,8 +46,8 @@ header {
 #logo {
 	display: block;
 	position: relative;
-	fill: #AF002A;
-	stroke: #AF002A;
+	fill: #900020;
+	stroke: #900020;
 	stroke-miterlimit: 5;
 	grid-area: logo;
 	justify-self: center;
