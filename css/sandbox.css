@@ -1,0 +1,18 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+.p-canvas-webgl {
+	position: fixed;
+	z-index: -1;
+	top: 0; left: 0;
+}
+
+body {
+    display: grid;
+    background-color: #1F1F1F;
+}
