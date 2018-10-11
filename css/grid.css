@@ -102,3 +102,39 @@ p1 {
         ". p p1 .";
     }
  }
+
+ @media only screen and (max-width: 500px) {
+    .grid {
+        grid-template-columns: 2.5vw 1fr 1fr 1fr 1fr 1fr 2.5vw;
+        grid-template-rows: 60px 60px 60px 60px 1fr 1fr 60px;
+        grid-template-areas: 
+        ". btn . . . . ."
+        ". btn1 . . logo . ."
+		". btn2 . . . . ."
+		". btn3 . . . . ."
+		". . . . . . ."
+		". . . . . . ."
+        "footer footer footer footer footer footer footer";
+    }
+     
+    .footer {
+		grid-template-columns: 100%;
+        grid-template-areas: 
+		"p"
+		"p1";
+		align-content: center;
+		justify-content: center;
+	}
+	
+	p {
+		grid-area: p;
+		align-self: center;
+		text-align: center;
+	}
+	
+	p1 {
+		grid-area: p1;
+		align-self: center;
+		text-align: center;
+	}
+ }
