@@ -12,7 +12,62 @@
 	top: 0; left: 0;
 }
 
-body {
+.grid {
     display: grid;
     background-color: #1F1F1F;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". . ."
+    ". game ."
+    ". . .";
+    width: 100vw;
+    height: 100vh;
+}
+
+.game {
+    grid-area: game;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    border-width: 2px;
+}
+
+.square,
+.square1,
+.square2,
+.square3,
+.square4,
+.square5,
+.square6,
+.square7,
+.square8 {
+    border-style: solid;
+    cursor: pointer;
+}
+
+.square,
+.square1,
+.square2 {
+    border-top-style: none;
+}
+
+.square,
+.square3,
+.square6 {
+    border-left-style: none;
+}
+
+.square2,
+.square5,
+.square8 {
+    border-right-style: none;
+}
+
+.square6,
+.square7,
+.square8 {
+    border-bottom-style: none;
 }
