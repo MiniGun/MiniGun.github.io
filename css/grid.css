@@ -139,13 +139,12 @@ p1 {
 	}
  }
 
- @media only screen and (max-height: 500px) {
+ @media only screen and (max-height: 360px) {
 	.grid {
         grid-template-columns: 1fr 15vw 15vw 200px 15vw 15vw 1fr;
-        grid-template-rows: 60px 1fr 1fr 60px;
+        grid-template-rows: 60px 1fr 60px;
         grid-template-areas: 
         ". btn2 btn logo btn1 btn3 ."
-        ". . . . . . ."
         ". . . . . . ."
         "footer footer footer footer footer footer footer";
 	}
