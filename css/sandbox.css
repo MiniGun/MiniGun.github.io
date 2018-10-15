@@ -35,39 +35,47 @@
     border-width: 2px;
 }
 
-.square,
-.square1,
-.square2,
-.square3,
-.square4,
-.square5,
-.square6,
-.square7,
-.square8 {
+.square {
+    display: grid;
     border-style: solid;
     cursor: pointer;
+    align-content: center;
+    justify-content: center;
+    font-size: 5vw;
 }
 
-.square,
-.square1,
-.square2 {
+#S0,
+#S1,
+#S2 {
     border-top-style: none;
 }
 
-.square,
-.square3,
-.square6 {
+#S0,
+#S3,
+#S6 {
     border-left-style: none;
 }
 
-.square2,
-.square5,
-.square8 {
+#S2,
+#S5,
+#S8 {
     border-right-style: none;
 }
 
-.square6,
-.square7,
-.square8 {
+#S6,
+#S7,
+#S8 {
     border-bottom-style: none;
+}
+
+@media only screen and (max-width: 960px) {
+    .square {
+        font-size: 9vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .square {
+        font-size: 20vw;
+    }
 }

@@ -1,13 +1,14 @@
 header {
 	background-color: #1a1a1a;
-	min-height: 100%;
+	min-height: 100vh;
+	max-height: 100vh;
 	background-repeat: no-repeat;
     background-size: cover;
 	overflow: hidden
 }
 
 #logo {
-	fill: #690012;
+	fill: #950020;
 	stroke: #950020;
 	stroke-miterlimit: 5;
 }
@@ -61,6 +62,7 @@ header {
 .Animate-Path {
 	width: 300px;
 	height: 300px;
+	top: 100px;
 	will-change: height, width;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
@@ -84,8 +86,8 @@ header {
 }
 
 @keyframes logo {
-	from { height: 300px; width: 300px; }
-	to { height: 70px; width: 70px; }
+	from { top: 100px; height: 300px; width: 300px; }
+	to { top: 0px; height: 70px; width: 70px; }
 }
 
 @keyframes buttons {
@@ -129,11 +131,21 @@ button::after{
 .btn:hover::after{
 	left: 0;
   }
-
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
   /* Media Queries */
+
 @media only screen and (max-width: 960px) {
    .btn {
-	   font-size: 1.2vw;
+	   font-size: 1.1vw;
    }
 	
 	p,
@@ -152,39 +164,4 @@ button::after{
 	 p1 {
 		font-size: 2.3vw;
 	 }
-
-
-	 .button,
-	 .button1,
-	 .button2,
-	 .button3 {
-		 justify-self: center;
-		 opacity: 0;
-		 animation-timing-function: ease-in-out;
-		 animation-fill-mode: forwards;
-		 animation-name: buttons;
-		 animation-duration: .8s;
-	 }
-	 
-	 .button {
-		animation-delay: 2.8s;
-	 }
-
-	 .button1{
-		 animation-delay: 3.1s;
-	 }
-
-	 .button2 {
-		animation-delay: 3.4s;
-	 }
-
-	 .button3 {
-		animation-delay: 3.7s;
-	 }
-
-	 @keyframes buttons {
-		from { opacity: 0; left: 20px; }
-		to { opacity: 1; left: 0; }
-	}
-
  }

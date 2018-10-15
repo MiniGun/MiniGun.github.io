@@ -38,6 +38,7 @@
 	position: relative;
 	grid-area: logo;
 	justify-self: center;
+	align-self: center;
 }
 
 .button {
