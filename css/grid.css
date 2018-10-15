@@ -15,9 +15,10 @@
 .grid {
 	display: grid;
 	grid-template-columns: 15vw 1fr 1fr 300px 1fr 1fr 15vw;
-	grid-template-rows: 60px 1fr 1fr 60px;
+	grid-template-rows: 60px 3px 1fr 1fr 60px;
 	grid-template-areas: 
 	". btn2 btn logo btn1 btn3 ."
+	"bar bar bar bar bar bar bar"
 	". . . . . . ."
 	". . . . . . ."
 	"footer footer footer footer footer footer footer";
@@ -61,6 +62,10 @@
 	align-self: center;
 }
 
+.bar {
+	grid-area: bar;
+}
+
 .footer {
     grid-area: footer;
 	display: grid;
@@ -87,11 +92,12 @@ p1 {
 
 @media only screen and (max-width: 960px) {
     .grid {
-        grid-template-columns: 15vw 1fr 1fr 300px 1fr 1fr 15vw;
-        grid-template-rows: 60px 1fr 1fr 60px;
+        grid-template-columns: 1fr 12vw 12vw 250px 12vw 12vw 1fr;
+        grid-template-rows: 60px 2px 1fr 1fr 60px;
         grid-template-areas: 
         ". btn2 btn logo btn1 btn3 ."
-        ". . . . . . ."
+		"bar bar bar bar bar bar bar"
+		". . . . . . ."
         ". . . . . . ."
         "footer footer footer footer footer footer footer";
     }
@@ -107,12 +113,11 @@ p1 {
  @media only screen and (max-width: 500px) {
     .grid {
         grid-template-columns: 2.5vw 1fr 1fr 1fr 1fr 2.5vw;
-        grid-template-rows: 60px 25px 1fr 1fr 1fr 60px;
+        grid-template-rows: 60px 25px 2px 1fr 60px;
 		grid-template-areas: 
 		". . logo logo . ."
-        ". btn btn1 btn2 btn3 ."
-		". . . . . ."
-		". . . . . ."
+		". btn btn1 btn2 btn3 ."
+		"bar bar bar bar bar bar"
 		". . . . . ."
         "footer footer footer footer footer footer";
     }
@@ -142,9 +147,10 @@ p1 {
  @media only screen and (max-height: 360px) {
 	.grid {
         grid-template-columns: 1fr 15vw 15vw 200px 15vw 15vw 1fr;
-        grid-template-rows: 60px 1fr 60px;
+        grid-template-rows: 60px 2px 1fr 60px;
         grid-template-areas: 
-        ". btn2 btn logo btn1 btn3 ."
+		". btn2 btn logo btn1 btn3 ."
+		"bar bar bar bar bar bar bar"
         ". . . . . . ."
         "footer footer footer footer footer footer footer";
 	}

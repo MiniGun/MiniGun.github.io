@@ -31,6 +31,12 @@ header {
 	pointer-events: all;
 }
 
+.bar {
+	justify-self: center;
+	background-color: #950020;
+	width: 0%;
+}
+
 .footer {
 	background-color: #ffffff0c;
 	color: #CECCCE;
@@ -85,6 +91,15 @@ header {
 	stroke-dashoffset: 2500;
 }
 
+.bar {
+	animation-name: bar;
+	will-change: width;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 2.8s;
+	animation-duration: 1s;
+}
+
 @keyframes logo {
 	from { top: 100px; height: 300px; width: 300px; }
 	to { top: 0px; height: 70px; width: 70px; }
@@ -107,6 +122,11 @@ header {
 @keyframes FillIn {
 	from { fill-opacity: 0; }
 	to { fill-opacity: 1; }
+}
+
+@keyframes bar {
+	from { width: 0%; }
+	to { width: 100%; }
 }
 
 button::after{
