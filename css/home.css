@@ -155,6 +155,18 @@ button::after{
 }
 
 @media only screen and (max-width: 500px) {
+	.button,
+	.button3 {
+		animation-delay: 2.8s;
+	}
+
+	.button1,
+	.button2 {
+		animation-delay: 3.2s;
+	}
+
+	
+	
 	.btn {
 		font-size: 2vw;
 		padding: 2vw 2vw;
