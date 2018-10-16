@@ -154,4 +154,11 @@ p1 {
         ". . . . . . ."
         "footer footer footer footer footer footer footer";
 	}
+
+	.footer {
+        grid-template-columns: 1fr 20vw 35vw 1fr;
+        grid-template-rows: 20px;
+        grid-template-areas: 
+        ". p p1 .";
+    }
  }
