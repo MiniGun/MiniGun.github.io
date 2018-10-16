@@ -22,7 +22,7 @@ header {
 	position: relative;
 	background: none;
 	border: none;
-	padding: .8vw 2vw;
+	padding: .6vw 1.5vw;
 	cursor: pointer;
 	transition: background-color 0.4s;
 	text-transform: uppercase;
@@ -129,28 +129,33 @@ header {
 	to { width: 100%; }
 }
 
-button::after{
+button::after {
 	content:"";
 	width: 0;
 	height: 2px;
 	position: absolute;
 	transition: all 0.2s easeinout;
 	background: #fff;
-  }
+}
   
- button:hover::after{
+button:hover::after {
 	width: 100%;
-  }
+}
 
-  .btn::after{
+.btn::after {
 	left: 50%;
 	bottom: 0;
 	transition-duration: 0.3s;
-  }
+}
   
-.btn:hover::after{
+.btn:hover::after {
 	left: 0;
-  }
+}
+
+.btn.current::after {
+	width: 100%;
+	left: 0;	
+}
   
  
  
@@ -171,7 +176,11 @@ button::after{
 	p,
     p1 {
         font-size: 1.1vw;
-    }
+	}
+	
+	.btn {
+		padding: 1.2vw 2vw;
+	}
 }
 
 @media only screen and (max-width: 500px) {
@@ -185,11 +194,9 @@ button::after{
 		animation-delay: 3.2s;
 	}
 
-	
-	
 	.btn {
 		font-size: 2vw;
-		padding: 2vw 2.2vw;
+		padding: 1.8vw 2vw;
 	}
 	 
 	 p,
@@ -213,7 +220,7 @@ button::after{
 	
 	.btn {
 		font-size: 1.5vw;
-		padding: 1.4vw 2vw;
+		padding: 1.6vw 2vw;
 	}
 	 
 	 p,
