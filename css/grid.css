@@ -14,14 +14,14 @@
 
 .grid {
 	display: grid;
-	grid-template-columns: 15vw 1fr 1fr 300px 1fr 1fr 15vw;
+	grid-template-columns: 15vw 1fr 1fr 300px 1fr 1fr 15vw 1px; /* Content slide - 1px for content */
 	grid-template-rows: 60px 3px 1fr 1fr 60px;
 	grid-template-areas: 
-	". btn btn1 logo btn2 btn3 ."
-	"bar bar bar bar bar bar bar"
-	". . . . . . ."
-	". . . . . . ."
-	"footer footer footer footer footer footer footer";
+	". btn btn1 logo btn2 btn3 . ."
+	"bar bar bar bar bar bar bar bar"
+	". . . . . . . ."
+	". . . . . . . ."
+	"footer footer footer footer footer footer footer footer";
 	max-height: 100vh;
 	max-width: 100vw;
 	height: 100vh;
