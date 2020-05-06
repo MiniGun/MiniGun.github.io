@@ -1,64 +1,70 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>Glitched Network</title>
-		<meta name="description" content="The Official Website of the Glitched Network Minecraft Server">
-		<meta name="keywords" content="Glitched Network, Glitched, Minecraft Server, Minecraft, Glitched Website, Official Website, Glitch Network">
+		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta charset="utf-8">
-		<link rel="icon" href="/img/favicon.png">
-		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,600" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,500,600,bold" rel="stylesheet">
-		<link rel="stylesheet" href="css/home.css">
-	</head>	
+		<link rel="icon" type=image/png" href="/images/favicon.png"/>
+		<link rel="stylesheet" type="text/css" href="/css/background.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/home.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/grid.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet"/>
+		
+		<title>Jacque Bougie</title>
+		
+	</head>
+
+	
+
 	<body>
 		<header>
 
-			<div class="page-in"></div>
-			<div class="page transition"></div>
-			<canvas id="canvas-webgl" class="p-canvas-webgl"></canvas>
+			<div class="glitch" style="z-index:-5;">
+				<div class="glitch-img"></div>
+				<div class="glitch-img"></div>
+				<div class="glitch-img"></div>
+				<div class="glitch-img"></div>
+			</div>
 
 			<div class="grid">
-				<a class="logo" href="/"><img class="logo-img" src="img/logo.png" alt="There should be something else here, please contact the owner."></a>
-				<div class="nav">
-					<a href="/"><button class="btn current" id="btn"><span>Home</span></button></a>
-					<a href="/"><button class="btn" id="btn1"><span>Store</span></button></a>
-					<a href="/staff.html"><button class="btn" id="btn2"><span>Staff</span></button></a>
-					<a href="/"><button class="btn" id="btn3"><span>Vote</span></button></a>
+				
+
+
+				<div class="button"> <a href="/"><button class="btn current" id="btn"><span>Home</span></button></a></div>
+			
+				<div class="button1"> <a href="/"><button class="btn" id="btn"><span>Projects</span></button></a></div>
+			
+				<div class="button2"> <a href="/"><button class="btn" id="btn"><span>About</span></button></a></div>
+			
+				<div class="button3"> <a href="/"><button class="btn" id="btn"><span>Contact</span></button></a></div>
+			
+
+
+				<svg id="logo-svg" xmlns="http://www.w3.org/2000/svg">
+					<defs> 
+						<g id="Logo-Text">
+							<path id="text-j" class="Text" stroke-width="7" d="m 337.6144,124.30975 q 0,40.03907 0,81.05469 0,41.50391 0,73.24219 0,17.08984 0,30.76172 0,13.18359 0,20.99609 0,0 0,0 0,0 0,0 0,17.08984 -4.88282,33.20313 -4.39453,16.11328 -12.69531,29.78515 -16.11328,25.39063 -42.48047,40.52735 -26.85547,15.625 -59.08203,15.625 -31.73828,0 -58.59375,-15.13672 -26.85547,-15.625 -42.48047,-41.01563 -8.30078,-13.67187 -13.18359,-29.78515 -4.882815,-16.11329 -4.882815,-33.20313 0,0 0,0 0,0 0,0 10.253905,0 10.253905,0 0,0 29.78516,0 0,0 0,0 0,0 0,0 0,32.71484 23.4375,55.66406 22.94922,23.4375 55.66406,23.4375 32.71484,0 56.15234,-23.4375 22.94922,-22.94922 22.94922,-55.66406 0,0 0,0 0,0 0,0 0,-37.10937 0,-64.45312 0,-27.83204 0,-47.85157 0,-16.11328 0,-28.32031 0,-11.71875 0,-20.50781 0,-28.32031 0,-35.15625 0,-6.83594 0,-25.39063 0,-4.39453 0,-10.253903 0,-6.347656 0,-14.160156 13.1836,13.183594 40.03907,40.039059 z" />
+							<path id="text-j" class="Text" stroke-width="7" d="m 518.27846,251.26288 q 0,-10.25391 0,-10.25391 0,0 0,-30.76172 17.57812,0 33.20312,4.88282 16.11328,4.88281 29.78516,13.18359 25.39062,16.11328 41.01562,42.96875 15.625,26.85547 15.625,59.08203 0,17.57813 -4.88281,33.20313 -4.39453,16.11328 -13.18359,29.78515 -15.625,25.39063 -42.48047,40.52735 -26.85547,15.625 -59.08203,15.625 -17.08985,0 -33.20313,-4.88282 -16.11328,-4.39453 -29.78515,-13.18359 -25.39063,-15.625 -41.01563,-42.48047 -15.13672,-26.36719 -15.13672,-58.59375 0,-34.17969 0,-103.02734 0,-34.17969 0,-103.02735 13.1836,-13.67187 40.03907,-40.039059 0,7.8125 0,13.671875 0,6.347654 0,10.742184 0,18.55469 0,25.39063 0,6.83594 0,35.15625 0,8.78906 0,20.50781 0,12.20703 0,28.32031 0,20.50782 0,47.85157 0,27.83203 0,64.45312 0,32.71484 22.94921,56.15234 23.4375,22.94922 56.15235,22.94922 33.20312,0 56.15234,-22.94922 23.4375,-23.4375 23.4375,-56.15234 0,-32.71484 -24.90234,-55.66406 -24.41406,-22.94922 -54.6875,-23.4375 z" />	 
+						</g> 
+					</defs> 
+				</svg>
+
+				<svg class="Animate-Path" id="logo" viewBox="145 0 450 550">
+					<use id="Draw-Text" class="Animate-Draw" xlink:href="#Logo-Text"></use>
+				</svg>
+
+
+
+				<div class="bar"></div>
+
+				<div class="footer">
+					
+					<p> Created by: Jacque Bougie </p> <p1> Contributors: Emily Nason - Hudson Arce </p1>
+
 				</div>
 
-				<h class="h">Welcome to Glitched Network!</h>
-				<p class="p">In early 2018 four friends decided to create their own Minecraft network
-				<br>(now know as Glitched Network). Currently, they have a towny server in development
-				<br>that will be released in the near future. If you would like to see the future plans
-				<br>of Glitched Network and some more info of Glitched Network, <a class="info">Click Here.</a>
-				<br></p>
-				<h1 class="h1">Latest Network Announcement</h1>
-				<p1 class="p1">Welcome to Glitched Network's official website! We will keep the latest server 
-				<br>announcement posted here.</p1>
-				<div class="playercount" style="opacity: 1;">
-					<p2>Join <span data-playercounter-ip="play.glitched.network">0</span> other players on Play.Glitched.Network</p2>
-				</div>
-
-				<h2 class="h2">Glitched Network's Future Plans</h2>
-				<p3 class="p3"> What needs to happen until Towny is released?
-				<br>- A more extensive economy needs to be planned and created
-				<br>- Spawn needs to be finished (It's almost there)
-				<br>- We are in need of dedicated staff
-				<br></p3>
-				<h3 class="h3">Support Us!</h3>
-				<p4 class="p4">We have many plans that we hope to see in Glitched Network's future. There are two
-				<br>ways in which you can support this future; if you play on Glitched Network, you are already
-				<br>supporting our network by having fun! However, if you would like to support the network even
-				<br>more, then please consider donating at our store.</p4>
-
-			</div>
+			</div> 
 		</header>
-
-		<script src="/js/jquery-3.3.1.min.js"></script>
-		<script src="/js/page-transition.js"></script>
-		<script src="/js/three.js"></script>
-		<script src="/js/glitch.js"></script>
-		<script src="/js/mc-player-counter.min.js"></script>
-
+		<script src="/js/w3data.js"></script>
 	</body>
 </html>
